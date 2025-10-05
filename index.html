@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simitçi Fırın | Pasta & Cafe</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="public/assets/logo.png" />
+</head>
+<body>
+  <!-- Top bar -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>HEMEN ARA: <a href="tel:+90XXXXXXXXXX">+90 XXX XXX XX XX</a></span>
+      <span>Gebze / Kocaeli</span>
+    </div>
+  </div>
+
+  <header class="container header">
+    <div class="brand">
+      <img src="public/assets/logo.jpeg" alt="Simitçi Fırın" class="logo">
+      <div class="brand-text">
+        <h1>Simitçi Fırın</h1>
+        <small>Pasta & Cafe • 1975</small>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="#/">Ana Sayfa</a>
+      <a href="#/menu">Menü</a>
+      <a href="#/contact">İletişim</a>
+      <a class="btn small" href="https://wa.me/90XXXXXXXXXX" target="_blank">WhatsApp</a>
+    </nav>
+  </header>
+
+  <main id="app" class="container">
+    <section class="cat-grid" aria-label="Kategoriler">
+  <a class="cat-card" data-cat="Kahvaltı"
+     style="--bg:url('img/kahvalti.jpg')" href="#/menu">
+    <span>KAHVALTI</span>
+  </a>
+
+  <a class="cat-card" data-cat="Sahanda"
+     style="--bg:url('img/sahanda.jpg')" href="#/menu">
+    <span>SAHANDA GRUBU</span>
+  </a>
+
+  <a class="cat-card" data-cat="Kruvasan"
+     style="--bg:url('img/kruvasan.jpg')" href="#/menu">
+    <span>KRUVASAN</span>
+  </a>
+
+  <a class="cat-card" data-cat="Börek"
+     style="--bg:url('img/borek.jpg')" href="#/menu">
+    <span>BÖREKLER</span>
+  </a>
+
+  <a class="cat-card" data-cat="Sandviç"
+     style="--bg:url('img/sandvic.jpg')" href="#/menu">
+    <span>AÇIK SICAK SANDVİÇLER / SANDVİÇLER</span>
+  </a>
+
+  <a class="cat-card" data-cat="Tost"
+     style="--bg:url('img/tost.jpg')" href="#/menu">
+    <span>TOSTLAR</span>
+  </a>
+
+  <a class="cat-card" data-cat="Aperatif"
+     style="--bg:url('img/aperatif.jpg')" href="#/menu">
+    <span>APERATİFLER</span>
+  </a>
+</section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© 1975–<span id="year"></span> Simitçi Fırın • Pasta & Cafe</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "items": [
+    { "name": "Sade Simit",        "price": 15, "category": "Simit Çeşitleri", "desc": "Taş fırından çıtır, klasik susamlı simit.",     "image": "public/assets/sade-simit.png" },
+    { "name": "Kaşarlı Simit",     "price": 35, "category": "Simit Çeşitleri", "desc": "Bol kaşar peynirli simit.",                     "image": "public/assets/kasarli-simit.png" },
+    { "name": "Çikolatalı Simit",  "price": 40, "category": "Simit Çeşitleri", "desc": "Tatlı severler için çikolata dolgulu simit.",   "image": "public/assets/cikolatali-simit.png" },
+    { "name": "Tahinli Simit",     "price": 40, "category": "Simit Çeşitleri", "desc": "Üzeri akışkan tahin soslu, susamlı simit.",     "image": "public/assets/tahinli-simit.png" },
+    { "name": "Tereyağlı Simit",   "price": 22, "category": "Simit Çeşitleri", "desc": "Tereyağ ile zenginleştirilmiş, çıtır simit.",   "image": "public/assets/tereyagli-simit.png" },
+
+    { "name": "Kıymalı Börek",     "price": 48, "category": "Börek Çeşitleri", "desc": "El açması yufka, kıymalı iç harç.",            "image": "public/assets/kiymali-borek.png" },
+    { "name": "Peynirli Börek",    "price": 45, "category": "Börek Çeşitleri", "desc": "Beyaz peynir ve maydanozlu börek.",            "image": "public/assets/peynirli-borek.png" },
+    { "name": "Patatesli Börek",   "price": 42, "category": "Börek Çeşitleri", "desc": "Baharatlı patates dolgulu börek.",             "image": "public/assets/patatesli-borek.png" },
+    { "name": "Ispanaklı Börek",   "price": 45, "category": "Börek Çeşitleri", "desc": "Ispanak ve peynirli karışım.",                  "image": "public/assets/ispanakli-borek.png" },
+
+    { "name": "Peynirli Poğaça",   "price": 20, "category": "Poğaça",          "desc": "Taze beyaz peynirle hazırlanmış klasik poğaça.","image": "public/assets/peynirli-pogaca.png" },
+    { "name": "Zeytinli Poğaça",   "price": 22, "category": "Poğaça",          "desc": "Siyah zeytin parçalı poğaça.",                 "image": "public/assets/zeytinli-pogaca.png" },
+    { "name": "Dereotlu Poğaça",   "price": 22, "category": "Poğaça",          "desc": "Dereotu aromalı yumuşak hamur.",               "image": "public/assets/dereotlu-pogaca.png" },
+    { "name": "Patatesli Poğaça",  "price": 22, "category": "Poğaça",          "desc": "Baharatlı patatesli iç harç.",                 "image": "public/assets/patatesli-pogaca.png" },
+    { "name": "Sade Poğaça",       "price": 18, "category": "Poğaça",          "desc": "Yumuşacık, sade poğaça.",                      "image": "public/assets/sade-pogaca.png" },
+
+    { "name": "Sade Açma",         "price": 22, "category": "Poğaça",          "desc": "Tereyağlı, yumuşacık klasik açma.",           "image": "public/assets/acma-sade.png" },
+    { "name": "Peynirli Açma",     "price": 25, "category": "Poğaça",          "desc": "Beyaz peynir ve maydanozlu iç harç.",          "image": "public/assets/acma-peynirli.png" },
+    { "name": "Zeytinli Açma",     "price": 25, "category": "Poğaça",          "desc": "Siyah zeytin parçalarıyla.",                   "image": "public/assets/acma-zeytinli.png" },
+    { "name": "Patatesli Açma",    "price": 25, "category": "Poğaça",          "desc": "Baharatlı patates dolgulu.",                   "image": "public/assets/acma-patatesli.png" },
+    { "name": "Dereotlu Açma",     "price": 25, "category": "Poğaça",          "desc": "Dereotu aromalı, kat kat.",                    "image": "public/assets/acma-dereotlu.png" },
+    { "name": "Çikolatalı Açma",   "price": 28, "category": "Poğaça",          "desc": "İçi çikolata dolgulu, hafif drizzle.",         "image": "public/assets/acma-cikolatali.png" }
+  ]
+}
