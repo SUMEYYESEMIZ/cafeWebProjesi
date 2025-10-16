@@ -1,27 +1,141 @@
 {
-  "items": [
-    { "name": "Sade Simit",        "price": 15, "category": "Simit Çeşitleri", "desc": "Taş fırından çıtır, klasik susamlı simit.",     "image": "public/assets/sade-simit.png" },
-    { "name": "Kaşarlı Simit",     "price": 35, "category": "Simit Çeşitleri", "desc": "Bol kaşar peynirli simit.",                     "image": "public/assets/kasarli-simit.png" },
-    { "name": "Çikolatalı Simit",  "price": 40, "category": "Simit Çeşitleri", "desc": "Tatlı severler için çikolata dolgulu simit.",   "image": "public/assets/cikolatali-simit.png" },
-    { "name": "Tahinli Simit",     "price": 40, "category": "Simit Çeşitleri", "desc": "Üzeri akışkan tahin soslu, susamlı simit.",     "image": "public/assets/tahinli-simit.png" },
-    { "name": "Tereyağlı Simit",   "price": 22, "category": "Simit Çeşitleri", "desc": "Tereyağ ile zenginleştirilmiş, çıtır simit.",   "image": "public/assets/tereyagli-simit.png" },
-
-    { "name": "Kıymalı Börek",     "price": 48, "category": "Börek Çeşitleri", "desc": "El açması yufka, kıymalı iç harç.",            "image": "public/assets/kiymali-borek.png" },
-    { "name": "Peynirli Börek",    "price": 45, "category": "Börek Çeşitleri", "desc": "Beyaz peynir ve maydanozlu börek.",            "image": "public/assets/peynirli-borek.png" },
-    { "name": "Patatesli Börek",   "price": 42, "category": "Börek Çeşitleri", "desc": "Baharatlı patates dolgulu börek.",             "image": "public/assets/patatesli-borek.png" },
-    { "name": "Ispanaklı Börek",   "price": 45, "category": "Börek Çeşitleri", "desc": "Ispanak ve peynirli karışım.",                  "image": "public/assets/ispanakli-borek.png" },
-
-    { "name": "Peynirli Poğaça",   "price": 20, "category": "Poğaça",          "desc": "Taze beyaz peynirle hazırlanmış klasik poğaça.","image": "public/assets/peynirli-pogaca.png" },
-    { "name": "Zeytinli Poğaça",   "price": 22, "category": "Poğaça",          "desc": "Siyah zeytin parçalı poğaça.",                 "image": "public/assets/zeytinli-pogaca.png" },
-    { "name": "Dereotlu Poğaça",   "price": 22, "category": "Poğaça",          "desc": "Dereotu aromalı yumuşak hamur.",               "image": "public/assets/dereotlu-pogaca.png" },
-    { "name": "Patatesli Poğaça",  "price": 22, "category": "Poğaça",          "desc": "Baharatlı patatesli iç harç.",                 "image": "public/assets/patatesli-pogaca.png" },
-    { "name": "Sade Poğaça",       "price": 18, "category": "Poğaça",          "desc": "Yumuşacık, sade poğaça.",                      "image": "public/assets/sade-pogaca.png" },
-
-    { "name": "Sade Açma",         "price": 22, "category": "Poğaça",          "desc": "Tereyağlı, yumuşacık klasik açma.",           "image": "public/assets/acma-sade.png" },
-    { "name": "Peynirli Açma",     "price": 25, "category": "Poğaça",          "desc": "Beyaz peynir ve maydanozlu iç harç.",          "image": "public/assets/acma-peynirli.png" },
-    { "name": "Zeytinli Açma",     "price": 25, "category": "Poğaça",          "desc": "Siyah zeytin parçalarıyla.",                   "image": "public/assets/acma-zeytinli.png" },
-    { "name": "Patatesli Açma",    "price": 25, "category": "Poğaça",          "desc": "Baharatlı patates dolgulu.",                   "image": "public/assets/acma-patatesli.png" },
-    { "name": "Dereotlu Açma",     "price": 25, "category": "Poğaça",          "desc": "Dereotu aromalı, kat kat.",                    "image": "public/assets/acma-dereotlu.png" },
-    { "name": "Çikolatalı Açma",   "price": 28, "category": "Poğaça",          "desc": "İçi çikolata dolgulu, hafif drizzle.",         "image": "public/assets/acma-cikolatali.png" }
+  "categories": [
+    {
+      "id": "kahvalti",
+      "title": "Kahvaltı",
+      "items": [
+        { "name": "Simitçi Fırın Special Serpme (2 kişilik)", "price": null, "img": "assets/logo.jpeg" },
+        { "name": "Gurme Kahvaltı Tabağı", "price": null, "img": "assets/logo.jpeg" },
+        { "name": "Hızlı Simit Kahvaltı", "price": null, "img": "assets/sade-simit.png" },
+        { "name": "Tost Tabağı", "price": null, "img": "assets/logo.jpeg" },
+        { "name": "Söğüş Tabağı", "price": null, "img": "assets/logo.jpeg" }
+      ]
+    },
+    {
+      "id": "sicaklar",
+      "title": "Sıcaklar",
+      "items": [
+        { "name": "Menemen (Klasik / Kaşarlı / Sucuklu)", "price": null, "img": "assets/logo.jpeg" },
+        { "name": "Omlet (Peynirli / Sucuklu)", "price": null, "img": "assets/logo.jpeg" },
+        { "name": "Sahanda Yumurta (Klasik / Sucuklu)", "price": null, "img": "assets/logo.jpeg" },
+        { "name": "Klasik Mihlama", "price": null, "img": "assets/logo.jpeg" },
+        { "name": "Patates Kızartması", "price": null, "img": "assets/logo.jpeg" }
+      ]
+    },
+    {
+      "id": "soguk-sandvic",
+      "title": "Soğuk Sandviçler",
+      "items": [
+        { "name": "Kavurmalı Sandviç", "price": null, "img": "assets/logo.jpeg" },
+        { "name": "Bahçıvan Sandviç", "price": null, "img": "assets/logo.jpeg" },
+        { "name": "Klasik Sandviç", "price": null, "img": "assets/logo.jpeg" },
+        { "name": "Ton Balıklı Sandviç", "price": null, "img": "assets/logo.jpeg" }
+      ]
+    },
+    {
+      "id": "borek",
+      "title": "Börek Çeşitleri",
+      "items": [
+        { "name": "Kıymalı Kol Böreği", "price": null, "img": "assets/logo.jpeg" },
+        { "name": "Peynirli Kol Böreği", "price": null, "img": "assets/logo.jpeg" },
+        { "name": "Patatesli Kol Böreği", "price": null, "img": "assets/logo.jpeg" },
+        { "name": "Ispanaklı Kol Böreği", "price": null, "img": "assets/logo.jpeg" },
+        { "name": "Su Böreği", "price": null, "img": "assets/logo.jpeg" },
+        { "name": "Kalem Börek (Patatesli / Peynirli / Kıymalı)", "price": null, "img": "assets/logo.jpeg" },
+        { "name": "Kürt Böreği", "price": null, "img": "assets/logo.jpeg" }
+      ]
+    },
+    {
+      "id": "pogaca",
+      "title": "Poğaça",
+      "items": [
+        { "name": "Sade Poğaça", "price": null, "img": "assets/logo.jpeg" },
+        { "name": "Peynirli Poğaça", "price": null, "img": "assets/logo.jpeg" },
+        { "name": "Patatesli Poğaça", "price": null, "img": "assets/logo.jpeg" },
+        { "name": "Zeytinli Poğaça", "price": null, "img": "assets/logo.jpeg" },
+        { "name": "Kaşarlı Poğaça", "price": null, "img": "assets/kasarli-simit.png" },
+        { "name": "Dereotlu Poğaça", "price": null, "img": "assets/logo.jpeg" }
+      ]
+    },
+    {
+      "id": "acma",
+      "title": "Açma",
+      "items": [
+        { "name": "Sade Açma", "price": null, "img": "assets/logo.jpeg" },
+        { "name": "Peynirli Açma", "price": null, "img": "assets/logo.jpeg" },
+        { "name": "Zeytinli Açma", "price": null, "img": "assets/logo.jpeg" },
+        { "name": "Kaşarlı Açma", "price": null, "img": "assets/logo.jpeg" },
+        { "name": "Salam Kaşarlı Açma", "price": null, "img": "assets/logo.jpeg" },
+        { "name": "Çikolatalı Açma", "price": null, "img": "assets/cikolatali-simit.png" }
+      ]
+    },
+    {
+      "id": "firindan",
+      "title": "Fırından Lezzetler",
+      "items": [
+        { "name": "Simit Pizza", "price": null, "img": "assets/sade-simit.png" },
+        { "name": "Tahinli Çörek", "price": null, "img": "assets/logo.jpeg" },
+        { "name": "Ay Çöreği", "price": null, "img": "assets/logo.jpeg" },
+        { "name": "Kete", "price": null, "img": "assets/logo.jpeg" },
+        { "name": "İzmir Bombası", "price": null, "img": "assets/logo.jpeg" },
+        { "name": "Üzümlü Kesme", "price": null, "img": "assets/logo.jpeg" }
+      ]
+    },
+    {
+      "id": "sutlu-tatli",
+      "title": "Sütlü Tatlılar",
+      "items": [
+        { "name": "Sütlaç", "price": null, "img": "assets/logo.jpeg" },
+        { "name": "Profiterol", "price": null, "img": "assets/logo.jpeg" },
+        { "name": "Trileçe", "price": null, "img": "assets/logo.jpeg" },
+        { "name": "Magnolya", "price": null, "img": "assets/logo.jpeg" },
+        { "name": "Supangle", "price": null, "img": "assets/logo.jpeg" }
+      ]
+    },
+    {
+      "id": "serbetli",
+      "title": "Şerbetli Tatlılar",
+      "items": [
+        { "name": "Fıstıklı Baklava", "price": null, "img": "assets/logo.jpeg" },
+        { "name": "Cevizli Baklava", "price": null, "img": "assets/logo.jpeg" },
+        { "name": "Şöbiyet", "price": null, "img": "assets/logo.jpeg" },
+        { "name": "Havuç Dilim", "price": null, "img": "assets/logo.jpeg" },
+        { "name": "Soğuk Baklava", "price": null, "img": "assets/logo.jpeg" }
+      ]
+    },
+    {
+      "id": "sicak-icecek",
+      "title": "Sıcak İçecekler",
+      "items": [
+        { "name": "Bardak Çay", "price": null, "img": "assets/logo.jpeg" },
+        { "name": "Türk Kahvesi (Sade / Damla Sakızlı / Double)", "price": null, "img": "assets/logo.jpeg" },
+        { "name": "Espresso / Double", "price": null, "img": "assets/logo.jpeg" },
+        { "name": "Americano / Filtre Kahve", "price": null, "img": "assets/logo.jpeg" },
+        { "name": "Latte / Mocha / Cappuccino / Macchiato / Caramel Macchiato", "price": null, "img": "assets/logo.jpeg" },
+        { "name": "Salep / Sıcak Çikolata", "price": null, "img": "assets/logo.jpeg" },
+        { "name": "Bitki-Meyve Çayları (Yeşil, Ihlamur, Ada, Nane-Limon…)", "price": null, "img": "assets/logo.jpeg" }
+      ]
+    },
+    {
+      "id": "soguk-icecek",
+      "title": "Soğuk İçecekler",
+      "items": [
+        { "name": "Coca Cola / Şekersiz / Fanta / Sprite / Fuse Tea", "price": null, "img": "assets/logo.jpeg" },
+        { "name": "Cappy / Uludağ Gazoz / Uludağ Limonata", "price": null, "img": "assets/logo.jpeg" },
+        { "name": "Su / Soda / Meyveli Soda", "price": null, "img": "assets/logo.jpeg" },
+        { "name": "Taze Sıkılmış Portakal Suyu", "price": null, "img": "assets/logo.jpeg" },
+        { "name": "Ayran / Süt / Meyve Nektarı (Capri-Sun, Meysu…)", "price": null, "img": "assets/logo.jpeg" }
+      ]
+    },
+    {
+      "id": "simit",
+      "title": "Simit",
+      "items": [
+        { "name": "Sade Simit", "price": 15, "img": "assets/sade-simit.png" },
+        { "name": "Kaşarlı Simit", "price": 35, "img": "assets/kasarli-simit.png" },
+        { "name": "Çikolatalı Simit", "price": 40, "img": "assets/cikolatali-simit.png" },
+        { "name": "Tahinli Simit", "price": 40, "img": "assets/logo.jpeg" }
+      ]
+    }
   ]
 }
