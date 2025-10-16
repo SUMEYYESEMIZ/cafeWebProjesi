@@ -62,7 +62,6 @@ async function loadMenu(){
       const A = ia === -1 ? 999 : ia;
       const B = ib === -1 ? 999 : ib;
       if (A !== B) return A - B;
-      // aynı ise alfabetik
       return a.localeCompare(b, "tr");
     });
 
@@ -126,20 +125,9 @@ function renderHome(){
     </section>
 
     <section>
-      <div class="tabs" id="homeTabs"></div>
       <div class="grid" id="popular"></div>
     </section>
   `;
-
-  // Anasayfa sekmeleri (menüye yönlendirir)
-  const tabs = document.getElementById("homeTabs");
-  ["Simit","Pastalar","İçecekler"].forEach((t,i)=>{
-    const b = document.createElement("button");
-    b.className = `tab ${i===0?"active":""}`;
-    b.textContent = t;
-    b.onclick = ()=>location.hash="#/menu";
-    tabs.appendChild(b);
-  });
 
   // Popüler (ilk 6)
   const list = state.products.slice(0,6);
@@ -168,7 +156,6 @@ function renderMenuCategories(){
     {name:'Soğuk İçecek', img:'public/assets/cats/soguk-icecek.jpg'}
   ];
 
-  // grid
   el.innerHTML = `
     <section class="cat-grid" aria-label="Kategoriler">
       ${cats.map(c => `
@@ -183,7 +170,6 @@ function renderMenuCategories(){
 
 /* --- Seçilen kategori ürünleri (#/menu/<slug>) --- */
 function renderProductsByCategory(catSlug){
-  // state.categories zaten yiyecek->içecek sırasına göre
   const catFromSlug = state.categories.find(c => slugify(c) === catSlug) || 'Tümü';
   state.activeCategory = catFromSlug;
   renderMenu();
