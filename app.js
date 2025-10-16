@@ -9,11 +9,36 @@ const state = {
 };
 
 /* =========================
+   Sıra (yiyecekler -> içecekler)
+   NOTE: Sıra karşılaştırması slug üzerinden yapılır.
+========================= */
+const ORDER = [
+  // YİYECEKLER
+  "kahvalti",
+  "simit",
+  "pogaca",
+  "acma",
+  "borekler", "borek",
+  "firindan", "firindan-lezzetler",
+  "acik-sicak-sandvicler-sandvicler", "sandvic", "soguk-sandvic",
+  "tostlar",
+  "aperatifler",
+  "kruvasan",
+  "sahanda-grubu", "sicaklar",
+  "sutlu-tatlilar", "sutlu-tatli",
+  "serbetli-tatlilar", "serbetli",
+  // İÇECEKLER (sona)
+  "sicak-icecek", "sicak-icecekler",
+  "soguk-icecek", "soguk-icecekler"
+];
+
+/* =========================
    Boot
 ========================= */
 window.addEventListener("hashchange", router);
 window.addEventListener("load", async () => {
-  document.getElementById("year").textContent = new Date().getFullYear();
+  const yearEl = document.getElementById("year");
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
   await loadMenu();
   router();
 });
@@ -26,8 +51,25 @@ async function loadMenu(){
     const r = await fetch("public/data/menu.json",{cache:"no-cache"});
     const d = await r.json();
     state.products = d.items || [];
-    state.categories = ["Tümü", ...new Set(state.products.map(p=>p.category))];
-  }catch(e){ console.error(e); }
+
+    // benzersiz kategorileri al
+    const unique = [...new Set(state.products.map(p => p.category).filter(Boolean))];
+
+    // belirtilen sıraya göre sırala (slug bazlı)
+    const byOrder = unique.slice().sort((a,b) => {
+      const ia = ORDER.indexOf(slugify(a));
+      const ib = ORDER.indexOf(slugify(b));
+      const A = ia === -1 ? 999 : ia;
+      const B = ib === -1 ? 999 : ib;
+      if (A !== B) return A - B;
+      // aynı ise alfabetik
+      return a.localeCompare(b, "tr");
+    });
+
+    state.categories = ["Tümü", ...byOrder];
+  }catch(e){
+    console.error("menu.json okunamadı:", e);
+  }
 }
 
 /* =========================
@@ -105,25 +147,32 @@ function renderHome(){
 }
 
 /* --- Kategori ızgarası (#/menu) --- */
-/* --- Kategori ızgarası (#/menu) --- */
 function renderMenuCategories(){
   const el = document.getElementById('app');
 
-  // >> Kendi resim dosyaların:
+  // Kapak görselleri — dilediğini ekleyip çıkarabilirsin
   const cats = [
     {name:'Kahvaltı', img:'public/assets/cats/kahvalti.jpg'},
-    {name:'Sahanda Grubu', img:'public/assets/cats/sahanda.jpg'},
-    {name:'Kruvasan', img:'public/assets/cats/kruvasan.jpg'},
+    {name:'Simit', img:'public/assets/cats/simit.jpg'},
+    {name:'Poğaça', img:'public/assets/cats/pogaca.jpg'},
+    {name:'Açma', img:'public/assets/cats/acma.jpg'},
     {name:'Börekler', img:'public/assets/cats/borek.jpg'},
-    {name:'Açık Sıcak Sandviçler / Sandviçler', img:'public/assets/cats/sandvic.jpg'},
+    {name:'Fırından', img:'public/assets/cats/firindan.jpg'},
+    {name:'Sandviç', img:'public/assets/cats/sandvic.jpg'},
     {name:'Tostlar', img:'public/assets/cats/tost.jpg'},
     {name:'Aperatifler', img:'public/assets/cats/aperatif.jpg'},
+    {name:'Sütlü Tatlı', img:'public/assets/cats/sutlu.jpg'},
+    {name:'Şerbetli', img:'public/assets/cats/serbetli.jpg'},
+    // İçecekler en sonda
+    {name:'Sıcak İçecek', img:'public/assets/cats/sicak-icecek.jpg'},
+    {name:'Soğuk İçecek', img:'public/assets/cats/soguk-icecek.jpg'}
   ];
 
+  // grid
   el.innerHTML = `
     <section class="cat-grid" aria-label="Kategoriler">
       ${cats.map(c => `
-        <a class="cat-card" style="--bg:url('${c.img}')"
+        <a class="cat-card" style="--cat-img:url('${c.img}')"
            href="#/menu/${encodeURIComponent(slugify(c.name))}">
           <span>${c.name.toUpperCase()}</span>
         </a>
@@ -132,12 +181,12 @@ function renderMenuCategories(){
   `;
 }
 
-
 /* --- Seçilen kategori ürünleri (#/menu/<slug>) --- */
 function renderProductsByCategory(catSlug){
+  // state.categories zaten yiyecek->içecek sırasına göre
   const catFromSlug = state.categories.find(c => slugify(c) === catSlug) || 'Tümü';
   state.activeCategory = catFromSlug;
-  renderMenu(); // mevcut ürün listeleme ekranın
+  renderMenu();
 }
 
 /* --- Ürün listeleme ekranı (tabs + search) --- */
@@ -161,7 +210,6 @@ function renderMenu(){
     b.textContent = cat;
     b.onclick = ()=>{
       state.activeCategory = cat;
-      // URL'i de güncellemek istersen:
       if(cat === "Tümü") location.hash = "#/menu";
       else location.hash = `#/menu/${encodeURIComponent(slugify(cat))}`;
       renderMenu();
@@ -180,7 +228,7 @@ function renderMenu(){
     const q = state.q.trim();
     const list = state.products.filter(p=>{
       const okCat = state.activeCategory==="Tümü" || p.category===state.activeCategory;
-      const okQ = !q || (p.name+p.desc).toLowerCase().includes(q);
+      const okQ = !q || (p.name + (p.desc||"")).toLowerCase().includes(q);
       return okCat && okQ;
     });
     grid.innerHTML = "";
