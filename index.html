@@ -2,25 +2,25 @@
 <html lang="tr">
 <head>
   <meta name="google-site-verification" content="ChSF7U2gQR6OgHF2rG1V8EyfUYp2z29Mlm7z7z6HwFg">
-
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Simitçi Fırın | Pasta & Cafe</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="public/assets/logo.png" />
 </head>
+
 <body>
   <!-- Top bar -->
   <div class="topbar">
     <div class="container topbar-inner">
-      <span>HEMEN ARA: <a href="tel:+90XXXXXXXXXX">+90 XXX XXX XX XX</a></span>
+      <span>HEMEN ARA: <a href="tel:+905438919499">+90 543 891 94 99</a></span>
       <span>Gebze / Kocaeli</span>
     </div>
   </div>
 
   <header class="container header">
     <div class="brand">
-      <img src="public/assets/logo.jpeg" alt="Simitçi Fırın" class="logo">
+      <img src="public/assets/logo.png" alt="Simitçi Fırın" class="logo">
       <div class="brand-text">
         <h1>Simitçi Fırın</h1>
         <small>Pasta & Cafe • 1975</small>
@@ -28,73 +28,80 @@
     </div>
 
     <nav class="nav">
-      <a href="#/">Ana Sayfa</a>
+      <a href="/">Ana Sayfa</a>
       <a href="#/menu">Menü</a>
       <a href="#/contact">İletişim</a>
-      <a class="btn small" href="https://wa.me/90XXXXXXXXXX" target="_blank">WhatsApp</a>
+      <a class="btn small" href="https://wa.me/905438919499" target="_blank">WhatsApp</a>
     </nav>
   </header>
+
   <!-- KATEGORİ BUTONLARI -->
+  <!-- KATEGORİ BUTONLARI (GÜNCEL) -->
 <nav class="chipbar">
-  <button class="chip active" data-cat="all">Tümü</button>
-  <button class="chip" data-cat="kahvalti">Kahvaltı</button>
-  <button class="chip" data-cat="sicaklar">Sıcaklar</button>
-  <button class="chip" data-cat="sicak-icecek">Sıcak İçecek</button>
-  <button class="chip" data-cat="soguk-icecek">Soğuk İçecek</button>
-  <button class="chip" data-cat="simit">Simit</button>
-  <button class="chip" data-cat="pogaca">Poğaça</button>
-  <button class="chip" data-cat="acma">Açma</button>
-  <button class="chip" data-cat="borek">Börek</button>
-  <button class="chip" data-cat="firindan">Fırından</button>
-  <button class="chip" data-cat="sutlu-tatli">Sütlü Tatlı</button>
-  <button class="chip" data-cat="serbetli">Şerbetli</button>
-  <button class="chip" data-cat="soguk-sandvic">Sandviç</button>
+  <button class="chip active" data-cat="all">TÜMÜ</button>
+  <button class="chip" data-cat="kahvalti">KAHVALTI</button>
+  <button class="chip" data-cat="sicaklar">SICAKLAR</button>
+  <button class="chip" data-cat="fit-kahvaltilar">FİT KAHVALTILAR</button>
+  <button class="chip" data-cat="tost-cesitleri">TOST ÇEŞİTLERİ</button>
+  <button class="chip" data-cat="soguk-sandvicler">SOĞUK SANDVİÇLER</button>
+  <button class="chip" data-cat="simit-cesitleri">SİMİT ÇEŞİTLERİ</button>
+  <button class="chip" data-cat="borek-cesitleri">BÖREK ÇEŞİTLERİ</button>
+  <button class="chip" data-cat="pogaca-cesitleri">POĞAÇA ÇEŞİTLERİ</button>
+  <button class="chip" data-cat="acma-cesitleri">AÇMA ÇEŞİTLERİ</button>
+  <button class="chip" data-cat="firindan-lezzetler">FIRINDAN LEZZETLER</button>
+
+  <!-- Yeni: Kurabiye ayrı ana başlık -->
+  <button class="chip" data-cat="kurabiye">KURABİYE</button>
+
+  <button class="chip" data-cat="sutlu-tatlilar">SÜTLÜ TATLILAR</button>
+  <button class="chip" data-cat="tek-kisilik-pastalar">TEK KİŞİLİK PASTALAR</button>
+  <button class="chip" data-cat="pastalar">PASTALAR</button>
+  <button class="chip" data-cat="serbetli-tatlilar">ŞERBETLİ TATLILAR</button>
+
+  <!-- Güncellendi: Kahve tek başlık (sıcak+soğuk) -->
+  <button class="chip" data-cat="kahve">KAHVE</button>
+
+  <button class="chip" data-cat="sicak-icecekler">SICAK İÇECEKLER</button>
+  <!-- Eski "soguk-kahveler" kaldırıldı; kahve hepsini kapsıyor -->
+
+  <button class="chip" data-cat="soguk-icecekler">SOĞUK İÇECEKLER</button>
 </nav>
 
-<!-- ÜRÜN KARTLARI -->
-<section id="product-grid" class="grid"></section>
 
-<script src="/app.js"></script>
+  <!-- ÜRÜN KARTLARI -->
+  <section id="product-grid" class="grid"></section>
 
 
   <main id="app" class="container">
     <section class="cat-grid" aria-label="Kategoriler">
-  <a class="cat-card" data-cat="Kahvaltı"
-     style="--bg:url('img/kahvalti.jpg')" href="#/menu">
-    <span>KAHVALTI</span>
-  </a>
+      <a class="cat-card" data-cat="Kahvaltı" style="--bg:url('img/kahvalti.jpg')" href="#/menu">
+        <span>KAHVALTI</span>
+      </a>
 
-  <a class="cat-card" data-cat="Sahanda"
-     style="--bg:url('img/sahanda.jpg')" href="#/menu">
-    <span>SAHANDA GRUBU</span>
-  </a>
+      <a class="cat-card" data-cat="Sahanda" style="--bg:url('img/sahanda.jpg')" href="#/menu">
+        <span>SAHANDA GRUBU</span>
+      </a>
 
-  <a class="cat-card" data-cat="Kruvasan"
-     style="--bg:url('img/kruvasan.jpg')" href="#/menu">
-    <span>KRUVASAN</span>
-  </a>
+      <a class="cat-card" data-cat="Kruvasan" style="--bg:url('img/kruvasan.jpg')" href="#/menu">
+        <span>KRUVASAN</span>
+      </a>
 
-  <a class="cat-card" data-cat="Börek"
-     style="--bg:url('img/borek.jpg')" href="#/menu">
-    <span>BÖREKLER</span>
-  </a>
+      <a class="cat-card" data-cat="Börek" style="--bg:url('img/borek.jpg')" href="#/menu">
+        <span>BÖREKLER</span>
+      </a>
 
-  <a class="cat-card" data-cat="Sandviç"
-     style="--bg:url('img/sandvic.jpg')" href="#/menu">
-    <span>AÇIK SICAK SANDVİÇLER / SANDVİÇLER</span>
-  </a>
+      <a class="cat-card" data-cat="Sandviç" style="--bg:url('img/sandvic.jpg')" href="#/menu">
+        <span>AÇIK SICAK SANDVİÇLER / SANDVİÇLER</span>
+      </a>
 
-  <a class="cat-card" data-cat="Tost"
-     style="--bg:url('img/tost.jpg')" href="#/menu">
-    <span>TOSTLAR</span>
-  </a>
+      <a class="cat-card" data-cat="Tost" style="--bg:url('img/tost.jpg')" href="#/menu">
+        <span>tost-cesitleri</span>
+      </a>
 
-  <a class="cat-card" data-cat="Aperatif"
-     style="--bg:url('img/aperatif.jpg')" href="#/menu">
-    <span>APERATİFLER</span>
-  </a>
-</section>
-
+      <a class="cat-card" data-cat="Aperatif" style="--bg:url('img/aperatif.jpg')" href="#/menu">
+        <span>APERATİFLER</span>
+      </a>
+    </section>
   </main>
 
   <footer class="footer">
@@ -105,3 +112,40 @@
 </body>
 </html>
 
+<!-- === Kategori Kartları: keskin köşe + aralıklı === -->
+<style>
+.cat-grid {
+  /* mevcut tanımların üstüne yazıyoruz */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)) !important;
+  gap: 24px !important;             /* kartlar arası mesafe */
+  margin: 0 auto;                   /* hizayı koru */
+}
+
+.cat-card {
+  aspect-ratio: 16 / 9;             /* aynı yükseklik algısı, sayfa büyümez */
+  border-radius: 0 !important;      /* köşeler keskin */
+  overflow: hidden;
+  display: block;
+  box-shadow: 0 8px 20px rgba(0,0,0,.08); /* istersen kaldırabilirsin */
+}
+
+/* Arka plan görseli aynı kalsın */
+.cat-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--cat-img) center/cover no-repeat;
+  /* köşe devralmasın diye */
+  border-radius: 0 !important;
+}
+
+/* Başlık/degrade görünmesin (sen zaten böyle kullanıyorsun) */
+.cat-card span {
+  display: none;
+}
+
+.cat-card::after {
+  display: none;
+}
+</style>
