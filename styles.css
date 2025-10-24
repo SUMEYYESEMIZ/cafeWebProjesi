@@ -159,3 +159,13 @@ a:hover{opacity:.85}
   .nav{ display:none; }
   .chipbar{ display:none; } /* yatay chipbar yerine drawer kullanılacak */
 }
+.hamburger span{
+  display:block;
+  width:24px;             /* üç çizgi eşit uzunluk */
+  height:2px;
+  margin:5px 0;
+  background:#2b3a35;     /* koyu renk, görünür */
+  border-radius:2px;
+  transition:transform .25s, opacity .25s;
+}
+
