@@ -179,3 +179,8 @@ a:hover{opacity:.85}
   .chip{font-size:.9rem;padding:.5rem .85rem}
   .hero-card h2{white-space:normal;text-wrap:balance}
 }
+/* DEBUG: hamburger'ı her boyutta göster */
+.hamburger{ display:inline-flex !important; align-items:center; justify-content:center; }
+.header{ display:flex; }                /* header'ın flex olduğundan emin olalım */
+.header > .hamburger{ order:-1; margin-right:8px; } /* solda dursun */
+
