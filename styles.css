@@ -118,8 +118,8 @@ a:hover{opacity:.85}
 }
 
 /* =========================
-   >>> HAMBURGER & DRAWER (temiz final) <<<
-   (En sonda dursun; önceki çakışmaları ezer)
+   >>> HAMBURGER & DRAWER (final) <<<
+   (Bu bölüm EN SONA konmalı)
 ========================= */
 
 /* Varsayılan: masaüstünde gizli */
@@ -128,14 +128,6 @@ a:hover{opacity:.85}
   width:44px; height:44px; padding:8px;
   border:0; border-radius:10px; background:transparent; cursor:pointer;
 }
-.hamburger span{
-  display:block; width:24px; height:2px; margin:6px 0; background:#2b3a35;
-  transition:transform .2s, opacity .2s;
-}
-/* Açıkken X animasyonu */
-.hamburger.is-open span:nth-child(1){ transform: translateY(8px) rotate(45deg); }
-.hamburger.is-open span:nth-child(2){ opacity:0; }
-.hamburger.is-open span:nth-child(3){ transform: translateY(-8px) rotate(-45deg); }
 
 /* Drawer (soldan kayan panel) */
 .chip-drawer{
@@ -152,21 +144,37 @@ a:hover{opacity:.85}
 /* Arka plan */
 .backdrop{ position:fixed; inset:0; background:rgba(0,0,0,.35); z-index:1000; }
 
-/* Mobil/Tablet’te hamburger görünür + hizalama */
+/* Mobil/Tablet: hamburger görünür & 3 çizgi ALT ALTA */
 @media (max-width:1024px){
   .header{ justify-content:flex-start; gap:12px; }
-  .hamburger{ display:inline-flex; align-items:center; justify-content:center; order:-1; margin-right:8px; }
   .nav{ display:none; }
-  .chipbar{ display:none; } /* yatay chipbar yerine drawer kullanılacak */
+  .chipbar{ display:none; }                 /* yatay chipbar yerine drawer */
+
+  .hamburger{
+    display:inline-flex;                    /* göster */
+    align-items:center; justify-content:center;
+    flex-direction:column;                  /* ÇİZGİLER ALT ALTA */
+    gap:6px;                                /* aralık */
+    order:-1;                               /* solda dursun */
+    margin-right:8px;
+  }
 }
-.hamburger span{
+
+/* Çizgiler (koyu yeşil, alt alta) */
+.hamburger span,
+.hamburger .bar{
   display:block;
-  width:24px;             /* üç çizgi eşit uzunluk */
+  width:24px;
   height:2px;
-  margin:5px 0;
-  background:#1b4d3e;     /* koyu renk, görünür */
+  background:#1b4d3e;                       /* koyu yeşil */
   border-radius:2px;
   transition:transform .25s, opacity .25s;
 }
 
-
+/* Açıkken X animasyonu (opsiyonel) */
+.hamburger.is-open span:nth-child(1),
+.hamburger.is-open .bar:nth-child(1){ transform: translateY(8px) rotate(45deg); }
+.hamburger.is-open span:nth-child(2),
+.hamburger.is-open .bar:nth-child(2){ opacity:0; }
+.hamburger.is-open span:nth-child(3),
+.hamburger.is-open .bar:nth-child(3){ transform: translateY(-8px) rotate(-45deg); }
