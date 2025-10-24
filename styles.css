@@ -183,4 +183,49 @@ a:hover{opacity:.85}
 .hamburger{ display:inline-flex !important; align-items:center; justify-content:center; }
 .header{ display:flex; }                /* header'ın flex olduğundan emin olalım */
 .header > .hamburger{ order:-1; margin-right:8px; } /* solda dursun */
+/* ==== HAMBURGER MUTLAKA GÖRÜNSÜN (EN SONA EKLE) ==== */
+.header{ display:flex !important; align-items:center; gap:12px; }
+
+/* Tüm ekranlarda geçici olarak görünür kıl (görünmüyorsa sorun cache/HTML'dedir) */
+.hamburger{
+  display:inline-flex !important;
+  align-items:center; justify-content:center;
+  width:44px; height:44px; padding:8px;
+  border:0; border-radius:10px;
+  background:#ffd54d;            /* görünür olsun diye sarı zemin */
+  position:relative; z-index:1002;
+  order:-1;                       /* SOLDAN başlat */
+  margin-right:8px;
+}
+.hamburger span{
+  display:block; width:24px; height:2px;
+  background:#2b3a35; margin:3px 0;
+  transition:transform .2s, opacity .2s;
+}
+.hamburger.is-open span:nth-child(1){ transform: translateY(8px) rotate(45deg); }
+.hamburger.is-open span:nth-child(2){ opacity: 0; }
+.hamburger.is-open span:nth-child(3){ transform: translateY(-8px) rotate(-45deg); }
+
+/* Drawer temel halleri (mobilde açılır) */
+.chip-drawer{ position:fixed; top:0; left:0; height:100dvh; width:min(86vw,360px);
+  background:#f6fbf8; box-shadow:0 0 30px rgba(0,0,0,.15);
+  transform:translateX(-100%); transition:transform .25s ease;
+  padding:18px; z-index:1001; overflow-y:auto; }
+.chip-drawer.open{ transform:translateX(0); }
+.chip-list{ display:flex; gap:12px; flex-direction:column; }
+.backdrop{ position:fixed; inset:0; background:rgba(0,0,0,.35); z-index:1000; }
+
+/* Sadece mobil/tablette: yatay chipbar'ı gizle, nav'ı gizle */
+@media (max-width:1024px){
+  .chipbar{ display:none !important; }
+  .nav{ display:none !important; }
+}
+
+/* İstersen masaüstünde sarı arka planı kaldır (görünürlüğü doğruladıktan sonra) */
+/*
+@media (min-width:1025px){
+  .hamburger{ background:transparent; }
+}
+*/
+
 
