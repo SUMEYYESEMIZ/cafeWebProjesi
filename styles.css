@@ -247,12 +247,8 @@ a:hover{opacity:.85}
     height: 72px;                          /* mobilde biraz küçültmek istersen */
   }
 
-  /* Hamburger solda kalsın (kullanıyorsan) */
-  .header .hamburger{
-    order: -1; 
-    margin-right: 8px;
-  }
 }
+
 
 
 
