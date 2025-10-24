@@ -31,6 +31,15 @@ const ORDER = [
   "bitki-ve-meyve-caylari",
   "soguk-icecekler", "soguk-icecek"
 ];
+/* Ana sayfada göstereceğimiz en sevilen ürünler (ad ile eşleşir) */
+const POPULAR = [
+  "Çıtır Simit",
+  "Kaşarlı Tost (garnitürlü)",
+  "Sütlaç",
+  "Americano",
+  "Kıymalı Kol Böreği",
+  "Bahçıvan Sandviç"
+];
 
 /* =========================
    Boot
@@ -558,10 +567,30 @@ function renderHome(){
     </div>
   </section>
 
-  <section>
+  <section class="container">
+    <h3 class="home-subtitle">En Sevilenler</h3>
     <div class="grid" id="popular"></div>
   </section>
   `;
+
+  renderPopularGrid();   // ⬅️ ızgarayı doldur
+}
+function renderPopularGrid(){
+  const grid = document.getElementById("popular");
+  if(!grid) return;
+
+  // isimle eşleştir, yoksa ilk 6 ürünü göster
+  const wanted = new Set(POPULAR.map(s => s.toLowerCase()));
+  let items = state.products.filter(p => wanted.has(p.name.toLowerCase()));
+
+  if (items.length === 0) {
+    items = state.products.slice(0, 6);
+  } else {
+    items = items.slice(0, 6);
+  }
+
+  grid.innerHTML = "";
+  grid.append(...items.map(Card));
 }
 
 /* --- Kategori ızgarası (#/menu) --- */
@@ -679,3 +708,4 @@ function Card(p){
   `;
   return el;
 }
+
