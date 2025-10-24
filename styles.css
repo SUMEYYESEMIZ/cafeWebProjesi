@@ -10,7 +10,7 @@
   --card:#ffffff;
   --shadow:0 8px 30px rgba(0,0,0,.06);
 
-  /* Mint palet (chiplerle uyumlu) */
+  /* Mint palet */
   --mint:#2f6f61;
   --mint-soft:#f3fbf6;
   --mint-border:#d7efe4;
@@ -29,8 +29,7 @@ a:hover{opacity:.85}
 
 /* ========== TOPBAR ========== */
 .topbar{
-  background:
-    repeating-linear-gradient(135deg,#EAF6EF 0 18px,#DCEEDC 18px 36px);
+  background:repeating-linear-gradient(135deg,#EAF6EF 0 18px,#DCEEDC 18px 36px);
   color:#1f3d31;font-size:13px;
 }
 .topbar-inner{display:flex;justify-content:space-between;align-items:center;padding:8px 0}
@@ -49,7 +48,7 @@ a:hover{opacity:.85}
 .btn{background:var(--accent);color:#fff;padding:12px 18px;border-radius:12px;border:none;cursor:pointer;box-shadow:var(--shadow)}
 .btn.small{padding:8px 12px;border-radius:10px}
 
-/* ========== HERO (boydan boya + mint) ========== */
+/* ========== HERO ========== */
 .hero{display:block;margin:28px 0}
 .hero-card{
   background:linear-gradient(135deg,var(--mint-soft) 0%, var(--bg) 60%);
@@ -57,15 +56,8 @@ a:hover{opacity:.85}
   border-radius:18px;padding:28px;box-shadow:var(--shadow);
   text-align:center;
 }
-.badge{
-  display:inline-block;background:#EAF6EF;color:var(--mint);
-  padding:6px 12px;border-radius:999px;font-size:12px;
-}
-.hero-card h2{
-  color:var(--mint);
-  white-space:nowrap;
-  font-size:clamp(28px,5vw,56px);line-height:1.1;margin:.75rem 0 .5rem;
-}
+.badge{display:inline-block;background:#EAF6EF;color:var(--mint);padding:6px 12px;border-radius:999px;font-size:12px}
+.hero-card h2{color:var(--mint);white-space:nowrap;font-size:clamp(28px,5vw,56px);line-height:1.1;margin:.75rem 0 .5rem}
 .hero-card p{color:#5f7b70;font-size:clamp(15px,1.8vw,18px)}
 .hero-card .actions{display:flex;justify-content:center;gap:12px;margin-top:12px}
 .hero-card .btn{background:var(--mint);border:1px solid var(--mint)}
@@ -73,10 +65,7 @@ a:hover{opacity:.85}
 .hero-card .btn:hover{filter:brightness(1.06)}
 
 /* ========== CHIP NAV (mint uyumlu) ========== */
-.chipbar{
-  display:flex;flex-wrap:wrap;justify-content:center;
-  gap:.6rem .8rem;margin:16px auto 6px;align-items:center;width:100%;
-}
+.chipbar{display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem .8rem;margin:16px auto 6px;align-items:center;width:100%}
 .chip{
   appearance:none;border:1px solid var(--mint-border);cursor:pointer;
   padding:.55rem .95rem;border-radius:999px;background:var(--mint-soft);
@@ -107,177 +96,66 @@ a:hover{opacity:.85}
 /* ========== Üsttekiler hariç chipbar/tabs gizle (varsa) ========== */
 .chipbar:not(:first-of-type), #app .chipbar, #app .tabs{display:none !important}
 
-/* ========== FOOTER ========== */
-.footer{text-align:center;padding:28px 0;margin-top:30px;border-top:1px solid var(--line);color:#7a7a7a}
-
-/* ========== HAMBURGER & DRAWER ========== */
-/* Varsayılan: masaüstünde hamburger gizli */
-.hamburger {
-  display: none;
-  width: 40px; height: 40px;
-  border: 0; background: transparent; cursor: pointer;
-  padding: 8px; border-radius: 10px;
-}
-.hamburger span {
-  display: block; height: 2px; margin: 6px 0; background: #2b3a35; /* mint koyusu */
-  transition: transform .2s, opacity .2s;
-}
-/* Açıkken X animasyonu */
-.hamburger.is-open span:nth-child(1){ transform: translateY(8px) rotate(45deg); }
-.hamburger.is-open span:nth-child(2){ opacity: 0; }
-.hamburger.is-open span:nth-child(3){ transform: translateY(-8px) rotate(-45deg); }
-
-/* Drawer (sol panel) – varsayılan kapalı */
-.chip-drawer { /* masaüstünde kullanılmıyor */ }
-.chip-list { display: flex; gap: 10px; flex-wrap: wrap; }
-
 /* ========== RESPONSIVE ========== */
-@media (max-width: 1024px) {
-  /* Hamburger görünsün ve SOLDAN hizalansın */
-  .hamburger {
-    display: inline-flex; align-items: center; justify-content: center;
-    order: -1;           /* header içinde ilk sıraya alır (solda) */
-    margin-right: 8px;   /* brand'dan küçük bir ayrım */
-  }
-
-  /* Header düzeni: solda hamburger + brand, sağda (varsa) nav gizlenir */
-  .header { gap: 12px; }
-  .nav { display: none; }
-
-  /* Yatay chipbar’ı mobilde gizle (drawer'ı kullanacağız) */
-  .chipbar { display: none; }
-
-  /* Sol’dan kayan drawer */
-  .chip-drawer {
-    position: fixed; top: 0; left: 0; height: 100dvh; width: min(86vw, 360px);
-    background: #f6fbf8; /* çok soft yeşil-krem */
-    box-shadow: 0 0 30px rgba(0,0,0,.15);
-    transform: translateX(-100%);
-    transition: transform .25s ease;
-    padding: 18px;
-    z-index: 1001;
-    overflow-y: auto;
-  }
-  .chip-drawer.open { transform: translateX(0); }
-
-  /* Drawer içindeki çipleri dikeyleştir */
-  .chip-list { flex-direction: column; gap: 12px; }
-  .chip {
-    display: block; padding: 10px 14px; border-radius: 12px;
-    background: #e9f6f0; color: #2b3a35; text-decoration: none; font-weight: 600;
-  }
-
-  /* Arka plan (tıklayınca kapanır) */
-  .backdrop {
-    position: fixed; inset: 0; background: rgba(0,0,0,.35);
-    z-index: 1000;
-  }
-}
-
-/* 900px altındaki ek ayarlar (mevcut davranışın korunması) */
 @media (max-width:900px){
+  .nav{display:none}
   .chip{font-size:.9rem;padding:.5rem .85rem}
   .hero-card h2{white-space:normal;text-wrap:balance}
 }
-/* DEBUG: hamburger'ı her boyutta göster */
-.hamburger{ display:inline-flex !important; align-items:center; justify-content:center; }
-.header{ display:flex; }                /* header'ın flex olduğundan emin olalım */
-.header > .hamburger{ order:-1; margin-right:8px; } /* solda dursun */
-/* ==== HAMBURGER MUTLAKA GÖRÜNSÜN (EN SONA EKLE) ==== */
-.header{ display:flex !important; align-items:center; gap:12px; }
 
-/* Tüm ekranlarda geçici olarak görünür kıl (görünmüyorsa sorun cache/HTML'dedir) */
-.hamburger{
-  display:inline-flex !important;
-  align-items:center; justify-content:center;
-  width:44px; height:44px; padding:8px;
-  border:0; border-radius:10px;
-  background:#ffd54d;            /* görünür olsun diye sarı zemin */
-  position:relative; z-index:1002;
-  order:-1;                       /* SOLDAN başlat */
-  margin-right:8px;
-}
-.hamburger span{
-  display:block; width:24px; height:2px;
-  background:#2b3a35; margin:3px 0;
-  transition:transform .2s, opacity .2s;
-}
-.hamburger.is-open span:nth-child(1){ transform: translateY(8px) rotate(45deg); }
-.hamburger.is-open span:nth-child(2){ opacity: 0; }
-.hamburger.is-open span:nth-child(3){ transform: translateY(-8px) rotate(-45deg); }
+/* ========== FOOTER ========== */
+.footer{text-align:center;padding:28px 0;margin-top:30px;border-top:1px solid var(--line);color:#7a7a7a}
 
-/* Drawer temel halleri (mobilde açılır) */
-.chip-drawer{ position:fixed; top:0; left:0; height:100dvh; width:min(86vw,360px);
-  background:#f6fbf8; box-shadow:0 0 30px rgba(0,0,0,.15);
-  transform:translateX(-100%); transition:transform .25s ease;
-  padding:18px; z-index:1001; overflow-y:auto; }
-.chip-drawer.open{ transform:translateX(0); }
-.chip-list{ display:flex; gap:12px; flex-direction:column; }
-.backdrop{ position:fixed; inset:0; background:rgba(0,0,0,.35); z-index:1000; }
-
-/* Sadece mobil/tablette: yatay chipbar'ı gizle, nav'ı gizle */
-@media (max-width:1024px){
-  .chipbar{ display:none !important; }
-  .nav{ display:none !important; }
-}
-
-/* İstersen masaüstünde sarı arka planı kaldır (görünürlüğü doğruladıktan sonra) */
-/*
-@media (min-width:1025px){
-  .hamburger{ background:transparent; }
-}
-*/
-/* Mobilde header ve brand sola yaslı */
-@media (max-width: 600px){
-  .header{ 
-    justify-content: flex-start !important; /* içerikleri sola topla */
-    gap: 10px;
-  }
-  .brand{
-    margin: 0 !important;                 /* olası auto marginleri temizle */
-    justify-content: flex-start; 
-  }
-  .brand-text{ 
-    text-align: left;                      /* metinleri sola hizala */
-  }
-  .brand-text h1{ 
-    margin: 0; line-height: 1.1;
-  }
-  .logo{ 
-    height: 72px;                          /* mobilde biraz küçültmek istersen */
-  }
-
-}
-/* === MOBİL HEADER SOLA YASLA (hamburgersiz) === */
+/* ========== MOBİL SOLA YASLA (hamburgersiz görünüm de düzgün olsun) ========== */
 @media (max-width: 768px){
-  /* container iç boşluğu azalsın, içerik sola yakın dursun */
   .container{ padding-left:12px !important; padding-right:12px !important; }
-
-  /* başlık bloğu solda toplansın */
-  .header{
-    display:flex !important;
-    justify-content:flex-start !important; /* ⬅️ asıl hareket */
-    align-items:center;
-    gap:10px;
-    padding:12px 0 !important;
-  }
-
-  /* marka blokları sol hizalı */
+  .header{ display:flex !important; justify-content:flex-start !important; align-items:center; gap:10px; padding:12px 0 !important; }
   .brand{ margin:0 !important; justify-content:flex-start; gap:10px; }
   .brand-text{ text-align:left; }
   .brand-text h1{ margin:0; line-height:1.1; font-size:20px !important; }
   .brand-text small{ font-size:12px !important; color:#5f7b70; }
-
-  /* logoyu mobil için küçült */
   .logo{ height:64px !important; width:auto; }
-
-  /* mobilde üst menü/çip barı gizle (istiyorsan) */
-  .nav{ display:none !important; }
-  .chipbar{ display:none !important; }
 }
 
+/* =========================
+   >>> HAMBURGER & DRAWER (temiz final) <<<
+   (En sonda dursun; önceki çakışmaları ezer)
+========================= */
 
+/* Varsayılan: masaüstünde gizli */
+.hamburger{
+  display:none;
+  width:44px; height:44px; padding:8px;
+  border:0; border-radius:10px; background:transparent; cursor:pointer;
+}
+.hamburger span{
+  display:block; width:24px; height:2px; margin:6px 0; background:#2b3a35;
+  transition:transform .2s, opacity .2s;
+}
+/* Açıkken X animasyonu */
+.hamburger.is-open span:nth-child(1){ transform: translateY(8px) rotate(45deg); }
+.hamburger.is-open span:nth-child(2){ opacity:0; }
+.hamburger.is-open span:nth-child(3){ transform: translateY(-8px) rotate(-45deg); }
 
+/* Drawer (soldan kayan panel) */
+.chip-drawer{
+  position:fixed; top:0; left:0; height:100dvh; width:min(86vw,360px);
+  background:#f6fbf8; box-shadow:0 0 30px rgba(0,0,0,.15);
+  transform:translateX(-100%); transition:transform .25s ease;
+  padding:18px; z-index:1001; overflow-y:auto;
+}
+.chip-drawer.open{ transform:translateX(0); }
 
+/* Drawer içeriği (chip’ler dikey) */
+.chip-list{ display:flex; gap:12px; flex-direction:column; }
 
+/* Arka plan */
+.backdrop{ position:fixed; inset:0; background:rgba(0,0,0,.35); z-index:1000; }
 
+/* Mobil/Tablet’te hamburger görünür + hizalama */
+@media (max-width:1024px){
+  .header{ justify-content:flex-start; gap:12px; }
+  .hamburger{ display:inline-flex; align-items:center; justify-content:center; order:-1; margin-right:8px; }
+  .nav{ display:none; }
+  .chipbar{ display:none; } /* yatay chipbar yerine drawer kullanılacak */
+}
