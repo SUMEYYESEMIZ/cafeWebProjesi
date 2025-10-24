@@ -1,53 +1,12 @@
 <!doctype html>
 <html lang="tr">
 <head>
-  <meta name="google-site-verification" content="ChSF7U2gQR6OgHF2rG1V8EyfUYp2z29Mlm7z7z6HwFg">
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Simitçi Fırın | Pasta & Cafe</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="public/assets/logo.png" />
-
-  <!-- === (İstersen styles.css'e taşı) Hamburger + Drawer CSS === -->
-  <style>
-    /* Hamburger */
-    .hamburger{display:none;width:40px;height:40px;border:0;background:transparent;cursor:pointer;padding:8px;border-radius:10px}
-    .hamburger span{display:block;height:2px;margin:6px 0;background:#2b3a35;transition:transform .2s,opacity .2s}
-    .hamburger.is-open span:nth-child(1){transform:translateY(8px) rotate(45deg)}
-    .hamburger.is-open span:nth-child(2){opacity:0}
-    .hamburger.is-open span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
-
-    /* Drawer (mobilde görünür) */
-    .chip-drawer{ /* desktop’ta normal akışta yer kaplamasın */ position:fixed; top:0; left:0;
-      height:100dvh; width:min(86vw,360px); background:#f6fbf8; box-shadow:0 0 30px rgba(0,0,0,.15);
-      transform:translateX(-100%); transition:transform .25s ease; padding:18px; z-index:1001; overflow-y:auto}
-    .chip-drawer.open{transform:translateX(0)}
-    .chip-drawer .chip-list{display:flex;flex-direction:column;gap:12px}
-    .chip-drawer .chip{display:block;padding:10px 14px;border-radius:12px;background:#e9f6f0;color:#2b3a35;text-decoration:none;font-weight:600}
-
-    .backdrop{position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:1000}
-
-    /* Masaüstü (hamburger yok, chipbar var) */
-    @media (min-width:1025px){
-      .hamburger{display:none}
-      /* drawer masaüstünde kullanılmayacak */
-      .chip-drawer{display:none}
-      .backdrop{display:none}
-    }
-
-    /* Tablet/Mobil (hamburger açık, yatay chipbar gizli) */
-    @media (max-width:1024px){
-      .hamburger{display:inline-flex;align-items:center;justify-content:center}
-      .chipbar{display:none} /* yatay çipleri gizle */
-    }
-
-    /* --- Senin en altta verdiğin kategori kart düzeni --- */
-    .cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr))!important;gap:24px!important;margin:0 auto}
-    .cat-card{aspect-ratio:16/9;border-radius:0!important;overflow:hidden;display:block;box-shadow:0 8px 20px rgba(0,0,0,.08)}
-    .cat-card::before{content:"";position:absolute;inset:0;background:var(--cat-img) center/cover no-repeat;border-radius:0!important}
-    .cat-card span{display:none}
-    .cat-card::after{display:none}
-  </style>
+  <meta name="google-site-verification" content="ChSF7U2gQR6OgHF2rG1V8EyfUYp2z29Mlm7z7z6HwFg">
 </head>
 
 <body>
@@ -59,7 +18,15 @@
     </div>
   </div>
 
+  <!-- HEADER -->
   <header class="container header">
+    <!-- HAMBURGER (solda) -->
+    <button id="menuToggle" class="hamburger" aria-expanded="false"
+            aria-controls="chipDrawer" aria-label="Kategorileri aç/kapat">
+      <span></span><span></span><span></span>
+    </button>
+
+    <!-- Marka -->
     <div class="brand">
       <img src="public/assets/logo.png" alt="Simitçi Fırın" class="logo">
       <div class="brand-text">
@@ -68,11 +35,7 @@
       </div>
     </div>
 
-    <!-- HAMBURGER -->
-    <button id="menuToggle" class="hamburger" aria-expanded="false" aria-controls="chipDrawer" aria-label="Kategorileri aç/kapat">
-      <span></span><span></span><span></span>
-    </button>
-
+    <!-- Üst menü (masaüstü) -->
     <nav class="nav">
       <a href="/">Ana Sayfa</a>
       <a href="#/menu">Menü</a>
@@ -81,12 +44,12 @@
     </nav>
   </header>
 
-  <!-- Drawer (mobil için) -->
-  <nav id="chipDrawer" class="chip-drawer" role="navigation">
-    <div class="chip-list"><!-- JS buraya .chipbar içeriğini kopyalayacak --></div>
+  <!-- HEADER’dan sonra: mobil çekmece -->
+  <nav id="chipDrawer" class="chip-drawer" role="navigation" aria-label="Kategoriler">
+    <div class="chip-list"></div>
   </nav>
 
-  <!-- Yatay KATEGORİ BUTONLARI (masaüstü için kalıyor) -->
+  <!-- KATEGORİ BUTONLARI (masaüstü için yatay chipbar) -->
   <nav class="chipbar">
     <button class="chip active" data-cat="all">TÜMÜ</button>
     <button class="chip" data-cat="kahvalti">KAHVALTI</button>
@@ -109,71 +72,16 @@
     <button class="chip" data-cat="soguk-icecekler">SOĞUK İÇECEKLER</button>
   </nav>
 
-  <!-- ÜRÜN KARTLARI -->
+  <!-- ÜRÜN KARTLARI (dinamik) -->
   <section id="product-grid" class="grid"></section>
 
-  <main id="app" class="container">
-    <section class="cat-grid" aria-label="Kategoriler">
-      <a class="cat-card" data-cat="Kahvaltı" style="--bg:url('img/kahvalti.jpg')" href="#/menu"><span>KAHVALTI</span></a>
-      <a class="cat-card" data-cat="Sahanda" style="--bg:url('img/sahanda.jpg')" href="#/menu"><span>SAHANDA GRUBU</span></a>
-      <a class="cat-card" data-cat="Kruvasan" style="--bg:url('img/kruvasan.jpg')" href="#/menu"><span>KRUVASAN</span></a>
-      <a class="cat-card" data-cat="Börek" style="--bg:url('img/borek.jpg')" href="#/menu"><span>BÖREKLER</span></a>
-      <a class="cat-card" data-cat="Sandviç" style="--bg:url('img/sandvic.jpg')" href="#/menu"><span>AÇIK SICAK SANDVİÇLER / SANDVİÇLER</span></a>
-      <a class="cat-card" data-cat="Tost" style="--bg:url('img/tost.jpg')" href="#/menu"><span>tost-cesitleri</span></a>
-      <a class="cat-card" data-cat="Aperatif" style="--bg:url('img/aperatif.jpg')" href="#/menu"><span>APERATİFLER</span></a>
-    </section>
-  </main>
+  <!-- APP ana alanı -->
+  <main id="app" class="container"></main>
 
   <footer class="footer">
     <p>© 1975–<span id="year"></span> Simitçi Fırın • Pasta & Cafe</p>
   </footer>
 
   <script src="app.js"></script>
-
-  <!-- Drawer JS (</body>’den hemen önce) -->
-  <script>
-    const btn = document.getElementById('menuToggle');
-    const drawer = document.getElementById('chipDrawer');
-    const list = drawer.querySelector('.chip-list');
-
-    // chipbar’dan içeriği otomatik kopyala (duplicate yazmamak için)
-    const chipbar = document.querySelector('.chipbar');
-    if (chipbar && list) list.innerHTML = chipbar.innerHTML;
-
-    // backdrop oluştur
-    let backdrop = document.createElement('div');
-    backdrop.id = 'backdrop';
-    backdrop.className = 'backdrop';
-    backdrop.hidden = true;
-    document.body.appendChild(backdrop);
-
-    function openMenu(){
-      drawer.classList.add('open');
-      btn.classList.add('is-open');
-      btn.setAttribute('aria-expanded','true');
-      backdrop.hidden = false;
-      document.body.style.overflow = 'hidden';
-    }
-    function closeMenu(){
-      drawer.classList.remove('open');
-      btn.classList.remove('is-open');
-      btn.setAttribute('aria-expanded','false');
-      backdrop.hidden = true;
-      document.body.style.overflow = '';
-    }
-
-    btn.addEventListener('click', ()=> drawer.classList.contains('open') ? closeMenu() : openMenu());
-    backdrop.addEventListener('click', closeMenu);
-    document.addEventListener('keydown', e => { if(e.key==='Escape') closeMenu(); });
-
-    // Drawer içindeki bir chip’e tıklanınca kapat
-    drawer.addEventListener('click', (e)=>{
-      const target = e.target.closest('.chip');
-      if (target) closeMenu();
-    });
-
-    // Yıl
-    (function(){ const y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear(); })();
-  </script>
 </body>
 </html>
