@@ -118,7 +118,7 @@ const DATA_PDF = [
   { category:"Börek Çeşitleri", name:"Patatesli Kol Böreği(kg)", price:"500 TL", image:"public/assets/menu/borek/patatesli-kol.jpg" },
   { category:"Börek Çeşitleri", name:"Ispanaklı Kol Böreği(kg)", price:"500 TL", image:"public/assets/menu/borek/ispanakli-kol.jpg" },
   { category:"Börek Çeşitleri", name:"Su Böreği(kg)", price:"500 TL", image:"public/assets/menu/borek/su-boregi.jpg" },
-  { category:"Börek Çeşitleri", name:"Kürt Böreği(kg)", price:"500 TL", image:"public/assets/menu/borek/kurt-boregi.png" }
+  { category:"Börek Çeşitleri", name:"Kürt Böreği(kg)", price:"500 TL", image:"public/assets/menu/borek/kurt-boregi.png" },
 
   // POĞAÇA ÇEŞİTLERİ
   { category:"Poğaça Çeşitleri", name:"Sade Poğaça", price:"20 TL", image:"public/assets/menu/pogaca/sade.jpg" },
@@ -715,5 +715,6 @@ function Card(p){
   `;
   return el;
 }
+
 
 
