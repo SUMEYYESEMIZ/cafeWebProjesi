@@ -113,6 +113,12 @@ const DATA_PDF = [
   { category:"Börek Çeşitleri", name:"Ispanaklı Kol Böreği", price:"125 TL", image:"public/assets/menu/borek/ispanakli-kol.jpg" },
   { category:"Börek Çeşitleri", name:"Su Böreği", price:"125 TL", image:"public/assets/menu/borek/su-boregi.jpg" },
   { category:"Börek Çeşitleri", name:"Kürt Böreği", price:"125 TL", image:"public/assets/menu/borek/kurt-boregi.png" },
+  { category:"Börek Çeşitleri", name:"Kıymalı Kol Böreği(kg)", price:"500 TL", image:"public/assets/menu/borek/kiymali-kol.jpg" },
+  { category:"Börek Çeşitleri", name:"Peynirli Kol Böreği(kg)", price:"500 TL", image:"public/assets/menu/borek/peynirli-kol.jpg" },
+  { category:"Börek Çeşitleri", name:"Patatesli Kol Böreği(kg)", price:"500 TL", image:"public/assets/menu/borek/patatesli-kol.jpg" },
+  { category:"Börek Çeşitleri", name:"Ispanaklı Kol Böreği(kg)", price:"500 TL", image:"public/assets/menu/borek/ispanakli-kol.jpg" },
+  { category:"Börek Çeşitleri", name:"Su Böreği(kg)", price:"500 TL", image:"public/assets/menu/borek/su-boregi.jpg" },
+  { category:"Börek Çeşitleri", name:"Kürt Böreği(kg)", price:"500 TL", image:"public/assets/menu/borek/kurt-boregi.png" }
 
   // POĞAÇA ÇEŞİTLERİ
   { category:"Poğaça Çeşitleri", name:"Sade Poğaça", price:"20 TL", image:"public/assets/menu/pogaca/sade.jpg" },
@@ -328,6 +334,7 @@ const DATA_PDF = [
   { category:"Soğuk İçecekler", name:"Su (0.5 lt)", price:"10 TL", image:"public/assets/menu/soguk-icecek/su-05.jpg" },
   { category:"Soğuk İçecekler", name:"Teneke Coca Cola (330 ml)", price:"50 TL", image:"public/assets/menu/soguk-icecek/cola-330.jpg" },
   { category:"Soğuk İçecekler", name:"Şişe Coca Cola", price:"30 TL", image:"public/assets/menu/soguk-icecek/cola-sise.jpg" },
+  { category:"Soğuk İçecekler", name:"Cola Turka", price:"40 TL", image:"public/assets/menu/soguk-icecek/colaturka.jpg" },
   { category:"Soğuk İçecekler", name:"Fanta (330 ml)", price:"50 TL", image:"public/assets/menu/soguk-icecek/fanta-330.jpg" },
   { category:"Soğuk İçecekler", name:"Cappy (330 ml)", price:"50 TL", image:"public/assets/menu/soguk-icecek/cappy-330.jpg" },
   { category:"Soğuk İçecekler", name:"Redbull (250 ml)", price:"60 TL", image:"public/assets/menu/soguk-icecek/redbull-250.jpg" },
@@ -708,4 +715,5 @@ function Card(p){
   `;
   return el;
 }
+
 
