@@ -349,8 +349,8 @@ const DATA_PDF = [
   { category:"Soğuk İçecekler", name:"Meysu Nektarı", price:"20 TL", image:"public/assets/menu/soguk-icecek/meysu.jpg" },
   { category:"Soğuk İçecekler", name:"Link (200 ml)", price:"20 TL", image:"public/assets/menu/soguk-icecek/link-200.jpg" },
   { category:"Soğuk İçecekler", name:"İçim Süt (180 ml)", price:"20 TL", image:"public/assets/menu/soguk-icecek/icim-180.jpg" },
-  { category:"Soğuk İçecekler", name:"Coca Cola (1 lt)", price:"60 TL", image:"public/assets/menu/soguk-icecek/cola-1lt.jpg" },
-  { category:"Soğuk İçecekler", name:"Fanta (1 lt)", price:"60 TL", image:"public/assets/menu/soguk-icecek/fanta-1lt.jpg" },
+  { category:"Soğuk İçecekler", name:"Coca Cola (1 lt)", price:"60 TL", image:"public/assets/menu/soguk-icecek/cola-25.jpg" },
+  { category:"Soğuk İçecekler", name:"Fanta (1 lt)", price:"60 TL", image:"public/assets/menu/soguk-icecek/fanta-25.jpg" },
   { category:"Soğuk İçecekler", name:"Uludağ Limonata (1 lt)", price:"60 TL", image:"public/assets/menu/soguk-icecek/limonata-1lt.jpg" },
   { category:"Soğuk İçecekler", name:"Meysu (1 lt)", price:"60 TL", image:"public/assets/menu/soguk-icecek/meysu-1lt.jpg" },
   { category:"Soğuk İçecekler", name:"Didi (2.5 lt)", price:"80 TL", image:"public/assets/menu/soguk-icecek/didi-25.jpg" },
@@ -715,6 +715,7 @@ function Card(p){
   `;
   return el;
 }
+
 
 
 
