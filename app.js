@@ -83,10 +83,49 @@ const DATA_PDF = [
       "Çay (sınırsız)"
     ]
   },
+  // Kahvaltı – tek dizide gidiyorsan DATA_PDF içine ekle
+{ 
+  category: "Kahvaltı",
+  name: "Gurme Kahvaltı Tabağı",
+  price: "250 TL",
+  image: "public/assets/menu/kahvalti/gurme.png",
+  icerik: [
+    "Seçme peynirler (beyaz, kaşar, tulum)",
+    "Zeytin çeşitleri",
+    "Domates, salatalık",
+    "Reçel, bal, tereyağı",
+    "Taze ekmek / simit",
+    "Çay"
+  ]
+},
+{ 
+  category: "Kahvaltı",
+  name: "Hızlı Simit Kahvaltı",
+  price: "120 TL",
+  image: "public/assets/menu/kahvalti/hizli-simit.png",
+  icerik: [
+    "Simit",
+    "Beyaz peynir veya kaşar",
+    "Zeytin",
+    "Domates, salatalık",
+    "Çay"
+  ]
+},
+{ 
+  category: "Kahvaltı",
+  name: "Söğüş Tabağı",
+  price: "70 TL",
+  image: "public/assets/menu/kahvalti/sogus.png",
+  icerik: [
+    "Domates",
+    "Salatalık",
+    "Biber",
+    "Beyaz peynir",
+    "Zeytin"
+  ]
+},
 
-  { category: "Kahvaltı", name: "Gurme Kahvaltı Tabağı",  price: "250 TL", image: "public/assets/menu/kahvalti/gurme.png" },
-  { category: "Kahvaltı", name: "Hızlı Simit Kahvaltı",   price: "120 TL", image: "public/assets/menu/kahvalti/hizli-simit.png" },
-  { category: "Kahvaltı", name: "Söğüş Tabağı",           price: "70 TL",  image: "public/assets/menu/kahvalti/sogus.png" },
+
 
   // SICAKLAR
   { category:"Sıcaklar", name:"Menemen (Klasik)", price:"100 TL", image:"public/assets/menu/sicaklar/menemen-klasik.png" },
@@ -739,6 +778,7 @@ function Card(p){
   `;
   return el;
 }
+
 
 
 
