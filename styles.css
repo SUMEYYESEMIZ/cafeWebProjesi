@@ -116,6 +116,30 @@ a:hover{opacity:.85}
   .brand-text small{ font-size:12px !important; color:#5f7b70; }
   .logo{ height:64px !important; width:auto; }
 }
+/* ========== PRODUCT DETAILS (İÇİNDEKİLER) ========== */
+.card .icerik{ 
+  margin-top:6px;
+  border-top:1px solid var(--line);
+}
+.card .icerik summary{
+  cursor:pointer;
+  list-style:none;
+  font-weight:700;
+  color:var(--mint);
+  padding:6px 0;
+  display:flex; align-items:center; gap:6px;
+}
+.card .icerik summary::-webkit-details-marker{ display:none; }
+.card .icerik summary::before{ content:"▸"; font-weight:900; }
+.card .icerik[open] summary::before{ content:"▾"; }
+
+.card .icerik ul{
+  margin:6px 0 0 18px;
+  padding:0 0 6px 0;
+  color:#3a3a3a;
+  font-size:.95rem; line-height:1.45;
+}
+.card .icerik ul li{ margin:.15rem 0; }
 
 /* =========================
    >>> HAMBURGER & DRAWER (final) <<<
@@ -184,4 +208,5 @@ a:hover{opacity:.85}
   font-weight: 800;
   color: var(--mint);
 }
+
 
