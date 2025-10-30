@@ -67,7 +67,12 @@ window.addEventListener("load", async () => {
 ========================= */
 const DATA_PDF = [
   // KAHVALTI — Serpme ve tabak kahvaltılar
-  { category:"Kahvaltı", name:"Simitçi Fırın Special Serpme (2 Kişilik)", price:"800 TL", image:"public/assets/menu/kahvalti/serpme.png",  icerik:[
+ {
+  category: "Kahvaltı",
+  name: "Simitçi Fırın Special Serpme (2 Kişilik)",
+  price: "800 TL",
+  image: "public/assets/menu/kahvalti/serpme.png",   // kapalı tırnak + sonra virgül
+  icerik: [
     "Menemen",
     "Kaşar, beyaz, örgü, tulum peynir",
     "Siyah & yeşil zeytin",
@@ -76,8 +81,9 @@ const DATA_PDF = [
     "Domates, salatalık",
     "Simit & poğaça",
     "Çay (sınırsız)"
-  ] 
-  },
+  ]
+},
+
   { category:"Kahvaltı", name:"Gurme Kahvaltı Tabağı", price:"250 TL", image:"public/assets/menu/kahvalti/gurme.png" },
   { category:"Kahvaltı", name:"Hızlı Simit Kahvaltı", price:"120 TL", image:"public/assets/menu/kahvalti/hizli-simit.png" },
   { category:"Kahvaltı", name:"Söğüş Tabağı", price:"70 TL", image:"public/assets/menu/kahvalti/sogus.png" },
@@ -733,6 +739,7 @@ function Card(p){
   `;
   return el;
 }
+
 
 
 
