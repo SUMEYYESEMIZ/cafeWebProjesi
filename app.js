@@ -65,28 +65,29 @@ window.addEventListener("load", async () => {
    Görsel yollarını klasörüne göre güncelle:
    image: "public/assets/menu/<kategori>/<dosya>.jpg"
 ========================= */
+/* ==== PDF'den çıkarılan TÜM ÜRÜNLER ==== */
 const DATA_PDF = [
-  // KAHVALTI — Serpme ve tabak kahvaltılar
- {
-  category: "Kahvaltı",
-  name: "Simitçi Fırın Special Serpme (2 Kişilik)",
-  price: "800 TL",
-  image: "public/assets/menu/kahvalti/serpme.png",   // kapalı tırnak + sonra virgül
-  icerik: [
-    "Menemen",
-    "Kaşar, beyaz, örgü, tulum peynir",
-    "Siyah & yeşil zeytin",
-    "Reçel, bal, tereyağı",
-    "Patates kızartması, sigara böreği",
-    "Domates, salatalık",
-    "Simit & poğaça",
-    "Çay (sınırsız)"
-  ]
-},
+  {
+    category: "Kahvaltı",
+    name: "Simitçi Fırın Special Serpme (2 Kişilik)",
+    price: "800 TL",
+    image: "public/assets/menu/kahvalti/serpme.png",
+    icerik: [
+      "Menemen",
+      "Kaşar, beyaz, örgü, tulum peynir",
+      "Siyah & yeşil zeytin",
+      "Reçel, bal, tereyağı",
+      "Patates kızartması, sigara böreği",
+      "Domates, salatalık",
+      "Simit & poğaça",
+      "Çay (sınırsız)"
+    ]
+  },
 
-  { category:"Kahvaltı", name:"Gurme Kahvaltı Tabağı", price:"250 TL", image:"public/assets/menu/kahvalti/gurme.png" },
-  { category:"Kahvaltı", name:"Hızlı Simit Kahvaltı", price:"120 TL", image:"public/assets/menu/kahvalti/hizli-simit.png" },
-  { category:"Kahvaltı", name:"Söğüş Tabağı", price:"70 TL", image:"public/assets/menu/kahvalti/sogus.png" },
+  { category: "Kahvaltı", name: "Gurme Kahvaltı Tabağı",  price: "250 TL", image: "public/assets/menu/kahvalti/gurme.png" },
+  { category: "Kahvaltı", name: "Hızlı Simit Kahvaltı",   price: "120 TL", image: "public/assets/menu/kahvalti/hizli-simit.png" },
+  { category: "Kahvaltı", name: "Söğüş Tabağı",           price: "70 TL",  image: "public/assets/menu/kahvalti/sogus.png" }
+];
 
   // SICAKLAR
   { category:"Sıcaklar", name:"Menemen (Klasik)", price:"100 TL", image:"public/assets/menu/sicaklar/menemen-klasik.png" },
@@ -739,6 +740,7 @@ function Card(p){
   `;
   return el;
 }
+
 
 
 
