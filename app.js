@@ -73,14 +73,17 @@ const DATA_PDF = [
     price: "800 TL",
     image: "public/assets/menu/kahvalti/serpme.png",
     icerik: [
-      "Menemen",
-      "Kaşar, beyaz, örgü, tulum peynir",
+      "Menemen veya sahanda yumurta",
+      "Seçme peynirler (beyaz, kaşar, tel peynir, top, eski kaşar)",
       "Siyah & yeşil zeytin",
-      "Reçel, bal, tereyağı",
+      "Domates, salatalık",
+      "Reçel, bal, tereyağı, kaymak, pekmez",
       "Patates kızartması, sigara böreği",
       "Domates, salatalık",
-      "Simit & poğaça",
-      "Çay (sınırsız)"
+      "Simit",
+      "Su Böreği",
+      "Ekmek",
+      "Termos çay"
     ]
   },
   // Kahvaltı – tek dizide gidiyorsan DATA_PDF içine ekle
@@ -90,12 +93,15 @@ const DATA_PDF = [
   price: "250 TL",
   image: "public/assets/menu/kahvalti/gurme.png",
   icerik: [
-    "Seçme peynirler (beyaz, kaşar, tulum)",
+    "Seçme peynirler (beyaz, kaşar, karper peynir)",
     "Zeytin çeşitleri",
+    "Patates kızartması",
+    "Sigara Böreği",
     "Domates, salatalık",
+    "Yeşil ve siyah zeytin",
     "Reçel, bal, tereyağı",
-    "Taze ekmek / simit",
-    "Çay"
+    "Ekmek",
+    "1 adet çay"
   ]
 },
 { 
@@ -105,10 +111,12 @@ const DATA_PDF = [
   image: "public/assets/menu/kahvalti/hizli-simit.png",
   icerik: [
     "Simit",
-    "Beyaz peynir veya kaşar",
-    "Zeytin",
+    "Beyaz peynir",
+    "Karper",
+    "Haşlanmış yumurta",
+    "Yeşil ve siyah zeytin",
     "Domates, salatalık",
-    "Çay"
+    "1 adet çay"
   ]
 },
 { 
@@ -119,7 +127,6 @@ const DATA_PDF = [
   icerik: [
     "Domates",
     "Salatalık",
-    "Biber",
     "Beyaz peynir",
     "Zeytin"
   ]
@@ -778,6 +785,7 @@ function Card(p){
   `;
   return el;
 }
+
 
 
 
