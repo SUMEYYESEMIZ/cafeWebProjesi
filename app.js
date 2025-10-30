@@ -86,8 +86,7 @@ const DATA_PDF = [
 
   { category: "Kahvaltı", name: "Gurme Kahvaltı Tabağı",  price: "250 TL", image: "public/assets/menu/kahvalti/gurme.png" },
   { category: "Kahvaltı", name: "Hızlı Simit Kahvaltı",   price: "120 TL", image: "public/assets/menu/kahvalti/hizli-simit.png" },
-  { category: "Kahvaltı", name: "Söğüş Tabağı",           price: "70 TL",  image: "public/assets/menu/kahvalti/sogus.png" }
-];
+  { category: "Kahvaltı", name: "Söğüş Tabağı",           price: "70 TL",  image: "public/assets/menu/kahvalti/sogus.png" },
 
   // SICAKLAR
   { category:"Sıcaklar", name:"Menemen (Klasik)", price:"100 TL", image:"public/assets/menu/sicaklar/menemen-klasik.png" },
@@ -740,6 +739,7 @@ function Card(p){
   `;
   return el;
 }
+
 
 
 
