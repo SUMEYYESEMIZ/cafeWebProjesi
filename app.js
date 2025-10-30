@@ -67,7 +67,16 @@ window.addEventListener("load", async () => {
 ========================= */
 const DATA_PDF = [
   // KAHVALTI — Serpme ve tabak kahvaltılar
-  { category:"Kahvaltı", name:"Simitçi Fırın Special Serpme (2 Kişilik)", price:"800 TL", image:"public/assets/menu/kahvalti/serpme.png" },
+  { category:"Kahvaltı", name:"Simitçi Fırın Special Serpme (2 Kişilik)", price:"800 TL", image:"public/assets/menu/kahvalti/serpme.png ,  icerik:[
+    "Menemen",
+    "Kaşar, beyaz, örgü, tulum peynir",
+    "Siyah & yeşil zeytin",
+    "Reçel, bal, tereyağı",
+    "Patates kızartması, sigara böreği",
+    "Domates, salatalık",
+    "Simit & poğaça",
+    "Çay (sınırsız)"
+  ]" },
   { category:"Kahvaltı", name:"Gurme Kahvaltı Tabağı", price:"250 TL", image:"public/assets/menu/kahvalti/gurme.png" },
   { category:"Kahvaltı", name:"Hızlı Simit Kahvaltı", price:"120 TL", image:"public/assets/menu/kahvalti/hizli-simit.png" },
   { category:"Kahvaltı", name:"Söğüş Tabağı", price:"70 TL", image:"public/assets/menu/kahvalti/sogus.png" },
@@ -711,10 +720,19 @@ function Card(p){
         <div class="price">${price(p.price)}</div>
       </div>
       ${p.desc?`<p style="margin:.35rem 0;color:#555">${p.desc}</p>`:""}
+       ${Array.isArray(p.icerik) && p.icerik.length ? `
+        <details class="icerik">
+          <summary>İçindekiler</summary>
+          <ul>
+            ${p.icerik.map(item => `<li>${item}</li>`).join('')}
+          </ul>
+        </details>
+      ` : ""}
     </div>
   `;
   return el;
 }
+
 
 
 
