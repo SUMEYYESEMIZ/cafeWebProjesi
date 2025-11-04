@@ -73,13 +73,15 @@ const DATA_PDF = [
     price: "800 TL",
     image: "public/assets/menu/kahvalti/serpme.png",
     icerik: [
-      "Menemen veya sahanda yumurta",
-      "Seçme peynirler (beyaz, kaşar, tel peynir, top, eski kaşar)",
+      "Menemen ve sahanda yumurta",
+      "Seçme peynirler (beyaz, kaşar, tel peynir, top peynir, eski kaşar peynşr)",
       "Siyah & yeşil zeytin",
+      "Reçel, bal, tereyağı, kaymak,tahin pekmez",
+      "Patates kızartması,3 adet sigara böreği",
+      "Acuka",
       "Domates, salatalık",
-      "Reçel, bal, tereyağı, kaymak, pekmez",
-      "Patates kızartması, sigara böreği",
-      "Domates, salatalık",
+      "Dana macar salam, hindi füme",
+      "Yeşillikler(dereotu, maydanoz)",
       "Simit",
       "Su Böreği",
       "Ekmek",
@@ -94,13 +96,14 @@ const DATA_PDF = [
   image: "public/assets/menu/kahvalti/gurme.png",
   icerik: [
     "Seçme peynirler (beyaz, kaşar, karper peynir)",
-    "Zeytin çeşitleri",
+    "Yeşillikler",
     "Patates kızartması",
-    "Sigara Böreği",
+    "1 adet Sigara Böreği",
     "Domates, salatalık",
     "Yeşil ve siyah zeytin",
-    "Reçel, bal, tereyağı",
+    "Reçel, bal, tereyağı, acuka",
     "Ekmek",
+    "1 adet haşlanmış yumurta",
     "1 adet çay"
   ]
 },
@@ -329,7 +332,7 @@ const DATA_PDF = [
   { category:"Şerbetli Tatlılar", name:"Cevizli Ev Baklavası (Porsiyon)", price:"120 TL", image:"public/assets/menu/serbetli/cevizli-baklava.png" },
   { category:"Şerbetli Tatlılar", name:"Soğuk Fıstıklı Baklava (Porsiyon)", price:"200 TL", image:"public/assets/menu/serbetli/soguk-fistikli.png" },
   { category:"Şerbetli Tatlılar", name:"Soğuk Fındıklı Baklava (Porsiyon)", price:"150 TL", image:"public/assets/menu/serbetli/soguk-findikli.png" },
-  { category:"Şerbetli Tatlılar", name:"Şekerpare (Porsiyon)", price:"0 TL", image:"public/assets/menu/serbetli/sekerpare.png" },
+  { category:"Şerbetli Tatlılar", name:"Şekerpare (Porsiyon)", price:"70 TL", image:"public/assets/menu/serbetli/sekerpare.png" },
 
   { category:"Şerbetli Tatlılar", name:"Kare Fıstıklı Kadayıf KG", price:"1000 TL",image:"public/assets/menu/serbetli/kare-fistikli-kadayif.png" },
   { category:"Şerbetli Tatlılar", name:"Kare Cevizli Kadayıf KG", price:"500 TL", image:"public/assets/menu/serbetli/kare-cevizli-kadayif.png" },
@@ -785,6 +788,7 @@ function Card(p){
   `;
   return el;
 }
+
 
 
 
