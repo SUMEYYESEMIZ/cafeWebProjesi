@@ -139,15 +139,43 @@ const DATA_PDF = [
 
   // SICAKLAR
   { category:"Sıcaklar", name:"Menemen (Klasik)", price:"100 TL", image:"public/assets/menu/sicaklar/menemen-klasik.png" },
-  { category:"Sıcaklar", name:"Menemen (Kaşarlı)", price:"150 TL", image:"public/assets/menu/sicaklar/menemen-kasarli.png" },
+  { category:"Sıcaklar", name:"Menemen (Kaşarlı)",   image:"public/assets/menu/sicaklar/menemen-kasarli.png" },
   { category:"Sıcaklar", name:"Menemen (Sucuklu)", price:"175 TL", image:"public/assets/menu/sicaklar/menemen-sucuklu.png" },
   { category:"Sıcaklar", name:"Sahanda Yumurta (Klasik)", price:"100 TL", image:"public/assets/menu/sicaklar/sahanda-klasik.png" },
   { category:"Sıcaklar", name:"Sahanda Yumurta (Sucuklu)", price:"170 TL", image:"public/assets/menu/sicaklar/sahanda-sucuklu.png" },
   { category:"Sıcaklar", name:"Patates Kızartması", price:"75 TL", image:"public/assets/menu/sicaklar/patates.jpg" },
 
   // FİT KAHVALTILAR
-  { category:"Fit Kahvaltılar", name:"Fit Avokado Tabağı", image:"public/assets/menu/fit/avokado.png" },
-  { category:"Fit Kahvaltılar", name:"Granola Bowl", image:"public/assets/menu/fit/granola.png" },
+{ 
+  category: "Fit Kahvaltılar", 
+  name: "Fit Avokado Tabağı", 
+  price: "150 TL", 
+  image: "public/assets/menu/fit/avokado.png",
+  icerik: [
+    "Yarım avokado",
+    "Haşlanmış yumurta",
+    "Domates",
+    "Salatalık",
+    "Beyaz peynir",
+    "Yeşillikler",
+    "Tam buğday ekmeği"
+  ]
+},
+{ 
+  category: "Fit Kahvaltılar", 
+  name: "Granola Bowl(meyveler değişiklik gösterebilir", 
+  price: "150 TL", 
+  image: "public/assets/menu/fit/granola.png",
+  icerik: [
+    "Yoğurt",
+    "Granola",
+    "Bal",
+    "Çilek, muz",
+    "Orman meyveleri",
+    "Chia tohumu",
+  ]
+}
+
 
   // TOST ÇEŞİTLERİ
   { category:"Tost Çeşitleri", name:"Kaşarlı Tost (garnitürlü)", price:"110 TL", image:"public/assets/menu/tost-cesitleri/kasarli.png" },
@@ -792,6 +820,7 @@ function Card(p){
   `;
   return el;
 }
+
 
 
 
