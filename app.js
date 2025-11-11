@@ -179,7 +179,7 @@ const DATA_PDF = [
   category: "Fit Kahvaltılar", 
   name: "Fit Omlet", 
   price: "180 TL", 
-  image: "public/assets/menu/fit/omlet.png",
+  image: "public/assets/menu/fit/fıtomlet.png",
   icerik: [
     "Omlet",
     "Beyaz peynir",
@@ -836,6 +836,7 @@ function Card(p){
   `;
   return el;
 }
+
 
 
 
