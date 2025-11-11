@@ -189,7 +189,7 @@ const DATA_PDF = [
     "Tam buğday ekmeği",
     "Yeşillikler"
   ]
-}
+},
 
 
 
@@ -836,6 +836,7 @@ function Card(p){
   `;
   return el;
 }
+
 
 
 
