@@ -216,6 +216,7 @@ const DATA_PDF = [
   { category:"Fırından Lezzetler", name:"Elmalı Turt", price:"80 TL", image:"public/assets/menu/firindan/elmali-turt.png" },
   { category:"Fırından Lezzetler", name:"Muffin Kek", price:"50 TL", image:"public/assets/menu/firindan/muffin.png" },
   { category:"Fırından Lezzetler", name:"Baton Kek", price:"90 TL", image:"public/assets/menu/firindan/baton.png" },
+  { category:"Fırından Lezzetler", name:"Yuvarlak Kek", price:"150 TL", image:"public/assets/menu/firindan/yuvarlak.png" },
   { category:"Fırından Lezzetler", name:"Selanik Gevreği", price:"75 TL", image:"public/assets/menu/firindan/selanik-gevregi.png" },
   { category:"Fırından Lezzetler", name:"Beze", price:"75 TL", image:"public/assets/menu/firindan/beze.png" },
   { category:"Fırından Lezzetler", name:"Susamlı Çubuk", price:"75 TL", image:"public/assets/menu/firindan/susamli-cubuk.png" },
@@ -791,6 +792,7 @@ function Card(p){
   `;
   return el;
 }
+
 
 
 
