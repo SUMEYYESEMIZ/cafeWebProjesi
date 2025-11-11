@@ -195,15 +195,16 @@ const DATA_PDF = [
 
   // AÇMA ÇEŞİTLERİ
   { category:"Açma Çeşitleri", name:"Sade Açma", price:"20 TL", image:"public/assets/menu/acma/sade.png" },
-  { category:"Açma Çeşitleri", name:"Peynirli Açma", price:"20 TL", image:"public/assets/menu/acma/peynirli.png" },
-  { category:"Açma Çeşitleri", name:"Patatesli Açma", price:"20 TL", image:"public/assets/menu/acma/patatesli.png" },
-  { category:"Açma Çeşitleri", name:"Zeytinli Açma", price:"20 TL", image:"public/assets/menu/acma/zeytinli.png" },
-  { category:"Açma Çeşitleri", name:"Kaşarlı Açma", price:"20 TL", image:"public/assets/menu/acma/kasarli.png" },
+  { category:"Açma Çeşitleri", name:"Peynirli Açma", price:"25 TL", image:"public/assets/menu/acma/peynirli.png" },
+  { category:"Açma Çeşitleri", name:"Patatesli Açma", price:"25 TL", image:"public/assets/menu/acma/patatesli.png" },
+  { category:"Açma Çeşitleri", name:"Zeytinli Açma", price:"25 TL", image:"public/assets/menu/acma/zeytinli.png" },
+  { category:"Açma Çeşitleri", name:"Kaşarlı Açma", price:"25 TL", image:"public/assets/menu/acma/kasarli.png" },
   { category:"Açma Çeşitleri", name:"Salam Kaşarlı Açma", price:"30 TL", image:"public/assets/menu/acma/salam-kasarli.png" },
-  { category:"Açma Çeşitleri", name:"Çikolatalı Açma", price:"20 TL", image:"public/assets/menu/acma/cikolatali.png" },
+  { category:"Açma Çeşitleri", name:"Çikolatalı Açma", price:"25 TL", image:"public/assets/menu/acma/cikolatali.png" },
 
   // FIRINDAN LEZZETLER
   { category:"Fırından Lezzetler", name:"Tahinli Çörek", price:"80 TL", image:"public/assets/menu/firindan/tahinli-corek.png" },
+  { category:"Fırından Lezzetler", name:"Paskalya Çöreği", price:"80 TL", image:"public/assets/menu/firindan/paskalya.png" },
   { category:"Fırından Lezzetler", name:"Ay Çöreği", price:"40 TL", image:"public/assets/menu/firindan/ay-coregi.png" },
   { category:"Fırından Lezzetler", name:"Kete", price:"40 TL", image:"public/assets/menu/firindan/kete.png" },
   { category:"Fırından Lezzetler", name:"İzmir Bombası", price:"40 TL", image:"public/assets/menu/firindan/izmir-bombasi.png" },
@@ -213,6 +214,7 @@ const DATA_PDF = [
   { category:"Fırından Lezzetler", name:"Elmalı Turta", price:"50 TL", image:"public/assets/menu/firindan/elmali-turta.png" },
   { category:"Fırından Lezzetler", name:"Elmalı Turt", price:"80 TL", image:"public/assets/menu/firindan/elmali-turt.png" },
   { category:"Fırından Lezzetler", name:"Muffin Kek", price:"50 TL", image:"public/assets/menu/firindan/muffin.png" },
+  { category:"Fırından Lezzetler", name:"Baton Kek", price:"90 TL", image:"public/assets/menu/firindan/baton.png" },
   { category:"Fırından Lezzetler", name:"Selanik Gevreği", price:"75 TL", image:"public/assets/menu/firindan/selanik-gevregi.png" },
   { category:"Fırından Lezzetler", name:"Beze", price:"75 TL", image:"public/assets/menu/firindan/beze.png" },
   { category:"Fırından Lezzetler", name:"Susamlı Çubuk", price:"75 TL", image:"public/assets/menu/firindan/susamli-cubuk.png" },
@@ -788,6 +790,7 @@ function Card(p){
   `;
   return el;
 }
+
 
 
 
