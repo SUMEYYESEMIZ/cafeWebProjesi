@@ -208,6 +208,7 @@ const DATA_PDF = [
   { category:"Fırından Lezzetler", name:"Ay Çöreği", price:"40 TL", image:"public/assets/menu/firindan/ay-coregi.png" },
   { category:"Fırından Lezzetler", name:"Kete", price:"40 TL", image:"public/assets/menu/firindan/kete.png" },
   { category:"Fırından Lezzetler", name:"İzmir Bombası", price:"40 TL", image:"public/assets/menu/firindan/izmir-bombasi.png" },
+  { category:"Fırından Lezzetler", name:"Acıbadem Kurabiye(5 adet)", price:"100 TL", image:"public/assets/menu/firindan/acıbadem.png" },
   { category:"Fırından Lezzetler", name:"Üzümlü Kesme", price:"50 TL", image:"public/assets/menu/firindan/uzumlu-kesme.png" },
   { category:"Fırından Lezzetler", name:"Çatal Kurabiye", price:"50 TL", image:"public/assets/menu/firindan/catal.png" },
   { category:"Fırından Lezzetler", name:"Şam Kurabiyesi", price:"50 TL", image:"public/assets/menu/firindan/sam-kurabiye.png" },
@@ -790,6 +791,7 @@ function Card(p){
   `;
   return el;
 }
+
 
 
 
