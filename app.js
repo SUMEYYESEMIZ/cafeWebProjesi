@@ -174,7 +174,23 @@ const DATA_PDF = [
     "Orman meyveleri",
     "Chia tohumu",
   ]
+},
+{ 
+  category: "Fit Kahvaltılar", 
+  name: "Fit Omlet", 
+  price: "150 TL", 
+  image: "public/assets/menu/fit/omlet.png",
+  icerik: [
+    "Omlet",
+    "Beyaz peynir",
+    "Domates",
+    "Salatalık",
+    "Zeytin",
+    "Tam buğday ekmeği",
+    "Yeşillikler"
+  ]
 }
+
 
 
   // TOST ÇEŞİTLERİ
@@ -820,6 +836,7 @@ function Card(p){
   `;
   return el;
 }
+
 
 
 
