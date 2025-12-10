@@ -1,21 +1,6 @@
 <!doctype html>
 <html lang="tr">
 <head>
- <script>
-// Eski domain (Türkçeli) ile gelindiyse yeni domaine yönlendir
-const oldHosts = [
-  'xn--simitifirin-q9a.com.tr',
-  'www.xn--simitifirin-q9a.com.tr'
-];
-
-if (oldHosts.includes(location.hostname)) {
-  const newUrl = 'https://simitcifirin.com.tr' +
-    location.pathname +
-    location.search +
-    location.hash;
-  window.location.replace(newUrl);
-}
-</script>
 
 
   <meta charset="utf-8" />
@@ -116,6 +101,7 @@ if (oldHosts.includes(location.hostname)) {
   <script src="app.js"></script>
 </body>
 </html>
+
 
 
 
