@@ -99,6 +99,18 @@
   </footer>
 
   <script src="app.js"></script>
+  <script>
+  function kontrol() {
+    const domain = document.getElementById("domain").value;
+    const regex = /^[a-z0-9.-]+$/;
+
+    if (regex.test(domain)) {
+      alert("✅ Geçerli domain");
+    } else {
+      alert("❌ Türkçe karakter veya geçersiz karakter var");
+    }
+  }
+</script>
 </body>
 </html>
 
