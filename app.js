@@ -308,7 +308,7 @@ const DATA_PDF = [
   { category:"Tek Kişilik Pastalar", name:"Ballı",                   price:"140 TL", image:"public/assets/menu/pasta/balli.jpg" },
   { category:"Tek Kişilik Pastalar", name:"Velvet",                  price:"140 TL", image:"public/assets/menu/pasta/velvet.jpg" },
   { category:"Tek Kişilik Pastalar", name:"Budapeşte",               price:"140 TL", image:"public/assets/menu/pasta/budapeste.png" },
-  { category:"Tek Kişilik Pastalar", name:"San Sebastian",           price:"140 TL", image:"public/assets/menu/pasta/san-sebastian.png" },
+  { category:"Tek Kişilik Pastalar", name:"San Sebastian",           price:"200 TL", image:"public/assets/menu/pasta/san-sebastian.png" },
   { category:"Tek Kişilik Pastalar", name:"Cheese Cake (Limon)",     price:"140 TL", image:"public/assets/menu/pasta/cheesecake-limon.jpg" },
   { category:"Tek Kişilik Pastalar", name:"Cheese Cake (Frambuaz)",  price:"140 TL", image:"public/assets/menu/pasta/cheesecake-frambuaz.jpg" },
   { category:"Tek Kişilik Pastalar", name:"Ibiza",                   price:"140 TL", image:"public/assets/menu/pasta/ibiza.png" },
