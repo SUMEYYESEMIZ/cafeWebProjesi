@@ -427,18 +427,18 @@ const DATA_PDF = [
   // SICAK İÇECEKLER (kahveler hariç)
   { category:"Sıcak İçecekler", name:"Bardak Çay",       price:"20 TL", image:"public/assets/menu/sicak-icecekler/bardak-cay.jpg" },
   { category:"Sıcak İçecekler", name:"Fincan Çay",       price:"40 TL", image:"public/assets/menu/sicak-icecekler/fincan-cay.jpg" },
-  { category:"Sıcak İçecekler", name:"Yeşil Çay",        price:"40 TL", image:"public/assets/menu/sicak-icecekler/yesil-cay.jpg" },
-  { category:"Sıcak İçecekler", name:"Yasemin Çayı",     price:"40 TL", image:"public/assets/menu/sicak-icecekler/yesil-cay.jpg" },
-  { category:"Sıcak İçecekler", name:"Rezene Çayı",      price:"40 TL", image:"public/assets/menu/sicak-icecekler/yesil-cay.jpg" },
-  { category:"Sıcak İçecekler", name:"Ihlamur",          price:"40 TL", image:"public/assets/menu/sicak-icecekler/yesil-cay.jpg" },
-  { category:"Sıcak İçecekler", name:"Nane Limon",       price:"40 TL", image:"public/assets/menu/sicak-icecekler/yesil-cay.jpg" },
-  { category:"Sıcak İçecekler", name:"Ada Çayı",         price:"40 TL", image:"public/assets/menu/sicak-icecekler/yesil-cay.jpg" },
-  { category:"Sıcak İçecekler", name:"Papatya Çayı",     price:"40 TL", image:"public/assets/menu/sicak-icecekler/yesil-cay.jpg" },
-  { category:"Sıcak İçecekler", name:"Kış Çayı",         price:"40 TL", image:"public/assets/menu/sicak-icecekler/kis.jpg" },
-  { category:"Sıcak İçecekler", name:"Elma Çayı",        price:"40 TL", image:"public/assets/menu/sicak-icecekler/yesil-cay.jpg" },
-  { category:"Sıcak İçecekler", name:"Elma Tarçın",      price:"40 TL", image:"public/assets/menu/sicak-icecekler/yesil-cay.jpg" },
-  { category:"Sıcak İçecekler", name:"Kuşburnu",         price:"40 TL", image:"public/assets/menu/sicak-icecekler/kis.jpg" },
-  { category:"Sıcak İçecekler", name:"Böğürtlen",        price:"40 TL", image:"public/assets/menu/sicak-icecekler/kis.jpg" },
+  { category:"Sıcak İçecekler", name:"Yeşil Çay",        price:"90 TL", image:"public/assets/menu/sicak-icecekler/yesil-cay.jpg" },
+  { category:"Sıcak İçecekler", name:"Yasemin Çayı",     price:"90 TL", image:"public/assets/menu/sicak-icecekler/yesil-cay.jpg" },
+  { category:"Sıcak İçecekler", name:"Rezene Çayı",      price:"90 TL", image:"public/assets/menu/sicak-icecekler/yesil-cay.jpg" },
+  { category:"Sıcak İçecekler", name:"Ihlamur",          price:"90 TL", image:"public/assets/menu/sicak-icecekler/yesil-cay.jpg" },
+  { category:"Sıcak İçecekler", name:"Nane Limon",       price:"90 TL", image:"public/assets/menu/sicak-icecekler/yesil-cay.jpg" },
+  { category:"Sıcak İçecekler", name:"Ada Çayı",         price:"90 TL", image:"public/assets/menu/sicak-icecekler/yesil-cay.jpg" },
+  { category:"Sıcak İçecekler", name:"Papatya Çayı",     price:"90 TL", image:"public/assets/menu/sicak-icecekler/yesil-cay.jpg" },
+  { category:"Sıcak İçecekler", name:"Kış Çayı",         price:"90 TL", image:"public/assets/menu/sicak-icecekler/kis.jpg" },
+  { category:"Sıcak İçecekler", name:"Elma Çayı",        price:"90 TL", image:"public/assets/menu/sicak-icecekler/yesil-cay.jpg" },
+  { category:"Sıcak İçecekler", name:"Elma Tarçın",      price:"90 TL", image:"public/assets/menu/sicak-icecekler/yesil-cay.jpg" },
+  { category:"Sıcak İçecekler", name:"Kuşburnu",         price:"90 TL", image:"public/assets/menu/sicak-icecekler/kis.jpg" },
+  { category:"Sıcak İçecekler", name:"Böğürtlen",        price:"90 TL", image:"public/assets/menu/sicak-icecekler/kis.jpg" },
 
   { category:"Sıcak İçecekler", name:"Salep",            price:"—",     image:"public/assets/menu/sicak-icecekler/salep.jpg" },
   { category:"Sıcak İçecekler", name:"Sıcak Çikolata",   price:"—",     image:"public/assets/menu/sicak-icecekler/sicak-cikolata.jpg" },
@@ -836,6 +836,7 @@ function Card(p){
   `;
   return el;
 }
+
 
 
 
