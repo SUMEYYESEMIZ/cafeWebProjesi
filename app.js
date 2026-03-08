@@ -134,7 +134,26 @@ const DATA_PDF = [
     "Zeytin"
   ]
 },
-
+{ 
+  category: "Kahvaltı",
+  name: "Peynir Tabağı(tek kişilik)",
+  price: "120 TL",
+  image: "public/assets/menu/kahvalti/peynirt.png"},
+{ 
+  category: "Kahvaltı",
+  name: "karper peynir adet",
+  price: "10 TL",
+  image: "public/assets/menu/kahvalti/karper.png"},
+{ 
+  category: "Kahvaltı",
+  name: "Lahana Sarma(8 adet)",
+  price: "150 TL",
+  image: "public/assets/menu/kahvalti/lahana.png"},
+{ 
+  category: "Kahvaltı",
+  name: "Yaprak Sarma(10 adet)",
+  price: "150 TL",
+  image: "public/assets/menu/kahvalti/yaprak.png"},
 
 
   // SICAKLAR
@@ -836,6 +855,7 @@ function Card(p){
   `;
   return el;
 }
+
 
 
 
