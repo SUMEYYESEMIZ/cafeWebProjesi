@@ -136,7 +136,7 @@ const DATA_PDF = [
 },
 { 
   category: "Kahvaltı",
-  name: "Peynir Tabağı(tek kişilik)",
+  name: "Peynir Tabağı(görsel temsilidir)",
   price: "120 TL",
   image: "public/assets/menu/kahvalti/peynirt.png"},
 { 
@@ -786,6 +786,7 @@ function Card(p){
   `;
   return el;
 }
+
 
 
 
