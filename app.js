@@ -165,7 +165,7 @@ const DATA_PDF = [
   { category:"Sıcaklar", name:"Sahanda Yumurta (Sucuklu)", price:"200 TL", image:"public/assets/menu/sicaklar/sahanda-sucuklu.png" },
   { category:"Sıcaklar", name:"Sahanda Yumurta (Kavurmalı)", price:"250 TL", image:"public/assets/menu/sicaklar/sahanda-kavurma.png" },
   { category:"Sıcaklar", name:"Patates Kızartması", price:"100 TL", image:"public/assets/menu/sicaklar/patates.jpg" },
-  { category:"Sıcaklar", name:"Sucuk Tava(10 adet)", price:"250 TL", image:"public/assets/menu/sicaklar/sucuk tava.png" },
+  { category:"Sıcaklar", name:"Sucuk Tava(10 adet)", price:"250 TL", image:"public/assets/menu/sicaklar/sucuktava.png" },
   { category:"Sıcaklar", name:"6'lı Sigara Böreği", price:"160 TL", image:"public/assets/menu/sicaklar/sigara.png" },
   { category:"Sıcaklar", name:"Atıştırmalık Mix", price:"200 TL", image:"public/assets/menu/sicaklar/mix.png" },
   
@@ -785,6 +785,7 @@ function Card(p){
   `;
   return el;
 }
+
 
 
 
