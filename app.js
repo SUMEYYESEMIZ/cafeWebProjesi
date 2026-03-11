@@ -222,7 +222,7 @@ const DATA_PDF = [
   { category:"Tost Çeşitleri", name:"Kaşarlı Tost (garnitürlü)", price:"160 TL", image:"public/assets/menu/tost-cesitleri/kasarli.png" },
   { category:"Tost Çeşitleri", name:"Karışık Tost (garnitürlü)", price:"200 TL", image:"public/assets/menu/tost-cesitleri/karisik.png" },
   { category:"Tost Çeşitleri", name:"Kavurmalı Kaşarlı Tost (garnitürlü)", price:"250 TL", image:"public/assets/menu/tost-cesitleri/kavurmali.png" },
-  { category:"Tost Çeşitleri", name:"Sucuklu Tost (garnitürlü)", price:"180 TL", image:"public/assets/menu/tost-cesitleri/sucuklu.png" }
+  { category:"Tost Çeşitleri", name:"Sucuklu Tost (garnitürlü)", price:"180 TL", image:"public/assets/menu/tost-cesitleri/sucuklu.png" },
 
   // SOĞUK SANDVİÇLER
   { category:"Soğuk Sandviçler", name:"Bahçıvan Sandviç", price:"100 TL", image:"public/assets/menu/sandvic/bahcivan.jpg" },
@@ -785,6 +785,7 @@ function Card(p){
   `;
   return el;
 }
+
 
 
 
