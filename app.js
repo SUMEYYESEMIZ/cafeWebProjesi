@@ -141,7 +141,7 @@ const DATA_PDF = [
   image: "public/assets/menu/kahvalti/peynirt.png"},
 { 
   category: "Kahvaltı",
-  name: "karper peynir adet",
+  name: "Karper Peynir Adet",
   price: "10 TL",
   image: "public/assets/menu/kahvalti/karper.png"},
 { 
@@ -786,6 +786,7 @@ function Card(p){
   `;
   return el;
 }
+
 
 
 
