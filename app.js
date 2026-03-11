@@ -251,8 +251,8 @@ const DATA_PDF = [
  
 
   // POĞAÇA ÇEŞİTLERİ
-  { category:"Poğaça Çeşitleri", name:"Mini Pizza Çeşitleri", price:"15 TL", image:"public/assets/menu/pogaca/pizza.jpg" },
-  { category:"Poğaça Çeşitleri", name:"Sakallı Poğaça(Maydonoz/Kaşar)", price:"15 TL", image:"public/assets/menu/pogaca/sakallı.jpg" },
+  { category:"Poğaça Çeşitleri", name:"Mini Pizza Çeşitleri", price:"15 TL", image:"public/assets/menu/pogaca/pizza.png" },
+  { category:"Poğaça Çeşitleri", name:"Sakallı Poğaça(Maydonoz/Kaşar)", price:"15 TL", image:"public/assets/menu/pogaca/sakallı.png" },
   { category:"Poğaça Çeşitleri", name:"Sade Poğaça", price:"20 TL", image:"public/assets/menu/pogaca/sade.jpg" },
   { category:"Poğaça Çeşitleri", name:"Peynirli Poğaça", price:"20 TL", image:"public/assets/menu/pogaca/peynirli.jpg" },
   { category:"Poğaça Çeşitleri", name:"Patatesli Poğaça", price:"20 TL", image:"public/assets/menu/pogaca/patatesli.jpg" },
@@ -269,7 +269,7 @@ const DATA_PDF = [
   { category:"Açma Çeşitleri", name:"Salam Kaşarlı Açma", price:"30 TL", image:"public/assets/menu/acma/salam-kasarli.png" },
   { category:"Açma Çeşitleri", name:"Çikolatalı Açma", price:"25 TL", image:"public/assets/menu/acma/cikolatali.png" },
   { category:"Açma Çeşitleri", name:"Bal Tahin Fındıklı Açma", price:"50 TL", image:"public/assets/menu/acma/baltahin.png" },
-  { category:"Açma Çeşitleri", name:"Haşhaşlı Açma", price:"30 TL", image:"public/assets/menu/acma/haşhaşlı.png" },
+  { category:"Açma Çeşitleri", name:"Haşhaşlı Açma", price:"30 TL", image:"public/assets/menu/acma/hashasli.png" },
 
   // FIRINDAN LEZZETLER
  { category:"Fırından Lezzetler", name:"Donut", price:"70 TL", image:"public/assets/menu/firindan/donut.png" },
@@ -394,10 +394,10 @@ const DATA_PDF = [
   { category:"Sıcak İçecekler", name:"Fincan Çay",       price:"50 TL", image:"public/assets/menu/sicak-icecekler/fincan-cay.jpg" },
   { category:"Sıcak İçecekler", name:"Bitki Çayları",     price:"100 TL", image:"public/assets/menu/sicak-icecekler/kis.jpg" },
   { category:"Sıcak İçecekler", name:"Sallama Çaylar",        price:"50 TL", image:"public/assets/menu/sicak-icecekler/kis.jpg" },
-  { category:"Sıcak İçecekler", name:"Oralet Çeşitleri",        price:"50 TL", image:"public/assets/menu/sicak-icecekler/oralet.jpg" },
+  { category:"Sıcak İçecekler", name:"Oralet Çeşitleri",        price:"50 TL", image:"public/assets/menu/sicak-icecekler/oralet.png" },
   { category:"Sıcak İçecekler", name:"Salep",            price:"100 TL", image:"public/assets/menu/sicak-icecekler/salep.jpg" },
   { category:"Sıcak İçecekler", name:"Sıcak Çikolata",   price:"100 TL", image:"public/assets/menu/sicak-icecekler/sicak-cikolata.jpg" },
-  { category:"Sıcak İçecekler", name:"Ballı Süt",            price:"100 TL", image:"public/assets/menu/sicak-icecekler/ballisut.jpg" },
+  { category:"Sıcak İçecekler", name:"Ballı Süt",            price:"100 TL", image:"public/assets/menu/sicak-icecekler/ballisut.png" },
 
   // SOĞUK İÇECEKLER
   { category:"Soğuk İçecekler", name:"Su (0.5 lt)", price:"20 TL", image:"public/assets/menu/soguk-icecek/su-05.jpg" },
@@ -785,6 +785,7 @@ function Card(p){
   `;
   return el;
 }
+
 
 
 
