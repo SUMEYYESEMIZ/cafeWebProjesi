@@ -248,6 +248,7 @@ const DATA_PDF = [
   { category:"Börek Çeşitleri", name:"Ispanaklı Kol Böreği", price:"125 TL", image:"public/assets/menu/borek/ispanakli-kol.jpg" },
   { category:"Börek Çeşitleri", name:"Su Böreği", price:"125 TL", image:"public/assets/menu/borek/su-boregi.jpg" },
   { category:"Börek Çeşitleri", name:"Kürt Böreği", price:"125 TL", image:"public/assets/menu/borek/kurt-boregi.png" },
+  { category:"Börek Çeşitleri", name:"Sigara Börek Çeşitleri", price:"35 TL", image:"public/assets/menu/borek/sigar.png" },
  
 
   // POĞAÇA ÇEŞİTLERİ
@@ -785,6 +786,7 @@ function Card(p){
   `;
   return el;
 }
+
 
 
 
