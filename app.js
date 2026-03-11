@@ -392,9 +392,9 @@ const DATA_PDF = [
   // SICAK İÇECEKLER (kahveler hariç)
   { category:"Sıcak İçecekler", name:"Bardak Çay",       price:"25 TL", image:"public/assets/menu/sicak-icecekler/bardak-cay.jpg" },
   { category:"Sıcak İçecekler", name:"Fincan Çay",       price:"50 TL", image:"public/assets/menu/sicak-icecekler/fincan-cay.jpg" },
-  { category:"Sıcak İçecekler", name:"Bitki Çayları",     price:"100 TL", image:"public/assets/menu/sicak-icecekler/kis.jpg" }
+  { category:"Sıcak İçecekler", name:"Bitki Çayları",     price:"100 TL", image:"public/assets/menu/sicak-icecekler/kis.jpg" },
   { category:"Sıcak İçecekler", name:"Sallama Çaylar",        price:"50 TL", image:"public/assets/menu/sicak-icecekler/kis.jpg" },
-  { category:"Sıcak İçecekler", name:"Oralet Çeşitleri",        price:"50 TL", image:"public/assets/menu/sicak-icecekler/oralet.jpg" }
+  { category:"Sıcak İçecekler", name:"Oralet Çeşitleri",        price:"50 TL", image:"public/assets/menu/sicak-icecekler/oralet.jpg" },
   { category:"Sıcak İçecekler", name:"Salep",            price:"100 TL", image:"public/assets/menu/sicak-icecekler/salep.jpg" },
   { category:"Sıcak İçecekler", name:"Sıcak Çikolata",   price:"100 TL", image:"public/assets/menu/sicak-icecekler/sicak-cikolata.jpg" },
   { category:"Sıcak İçecekler", name:"Ballı Süt",            price:"100 TL", image:"public/assets/menu/sicak-icecekler/ballisut.jpg" },
@@ -785,6 +785,7 @@ function Card(p){
   `;
   return el;
 }
+
 
 
 
