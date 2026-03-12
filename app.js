@@ -267,7 +267,7 @@ const DATA_PDF = [
   { category:"Açma Çeşitleri", name:"Patatesli Açma", price:"25 TL", image:"public/assets/menu/acma/patatesli.png" },
   { category:"Açma Çeşitleri", name:"Zeytinli Açma", price:"25 TL", image:"public/assets/menu/acma/zeytinli.png" },
   { category:"Açma Çeşitleri", name:"Kaşarlı Açma", price:"25 TL", image:"public/assets/menu/acma/kasarli.png" },
-  { category:"Açma Çeşitleri", name:"Salam Kaşarlı Açma", price:"30 TL", image:"public/assets/menu/acma/salam-kasarli.png" },
+  { category:"Açma Çeşitleri", name:"Salam Kaşarlı Açma", price:"40 TL", image:"public/assets/menu/acma/salam-kasarli.png" },
   { category:"Açma Çeşitleri", name:"Çikolatalı Açma", price:"25 TL", image:"public/assets/menu/acma/cikolatali.png" },
   { category:"Açma Çeşitleri", name:"Bal Tahin Fındıklı Açma", price:"50 TL", image:"public/assets/menu/acma/baltahin.png" },
   { category:"Açma Çeşitleri", name:"Haşhaşlı Açma", price:"30 TL", image:"public/assets/menu/acma/hashasli.png" },
@@ -786,6 +786,7 @@ function Card(p){
   `;
   return el;
 }
+
 
 
 
