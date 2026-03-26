@@ -11,7 +11,6 @@
   --card:#ffffff;
   --shadow:0 8px 30px rgba(90,52,33,.08);
 
-  /* Kahve palet */
   --mint:#5a3421;
   --mint-soft:#f3e7dc;
   --mint-border:#e8d6c6;
@@ -43,97 +42,87 @@ a:hover{opacity:.85}
 }
 .brand{display:flex;align-items:center;gap:12px}
 .logo{height:150px}
-.brand-text h1{font-size:28px;margin:0;color:var(--mint);font-weight:800;letter-spacing:.2px}
-.brand-text small{color:#8a6f5a;font-size:16px}
+.brand-text h1{font-size:28px;margin:0;color:var(--mint);font-weight:800}
+.brand-text small{color:#8a6f5a}
 .nav a{margin:0 10px}
+
 .btn{
   background:linear-gradient(135deg,#7a4a2f,#5a3421);
-  color:#fff;padding:12px 18px;border-radius:12px;border:none;cursor:pointer;box-shadow:var(--shadow)
+  color:#fff;padding:12px 18px;border-radius:12px;border:none;cursor:pointer;
 }
-.btn:hover{
-  background:linear-gradient(135deg,#d07a2d,#7a4a2f);
-  transform:translateY(-1px)
-}
-.btn.small{padding:8px 12px;border-radius:10px}
 
 /* ========== HERO ========== */
-.hero{display:block;margin:28px 0}
+.hero{margin:28px 0}
 .hero-card{
-  background:linear-gradient(135deg,var(--mint-soft) 0%, var(--bg) 60%);
+  background:linear-gradient(135deg,var(--mint-soft),var(--bg));
   border:1px solid var(--mint-border);
   border-radius:18px;padding:28px;box-shadow:var(--shadow);
   text-align:center;
 }
-.badge{display:inline-block;background:#f3e7dc;color:var(--mint);padding:6px 12px;border-radius:999px;font-size:12px}
-.hero-card h2{color:var(--mint);white-space:nowrap;font-size:clamp(28px,5vw,56px);line-height:1.1;margin:.75rem 0 .5rem}
-.hero-card p{color:#8a6f5a;font-size:clamp(15px,1.8vw,18px)}
-.hero-card .actions{display:flex;justify-content:center;gap:12px;margin-top:12px}
-.hero-card .btn{background:var(--mint);border:1px solid var(--mint)}
-.hero-card .btn.small{background:var(--mint-active);border-color:var(--mint-active)}
-.hero-card .btn:hover{filter:brightness(1.06)}
+.hero-card h2{color:var(--mint)}
+.hero-card p{color:#8a6f5a}
 
 /* ========== CHIP NAV ========== */
-.chipbar{display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem .8rem;margin:16px auto 6px;align-items:center;width:100%}
+.chipbar{display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem .8rem;margin:16px auto}
 .chip{
-  appearance:none;border:1px solid var(--mint-border);cursor:pointer;
-  padding:.55rem .95rem;border-radius:999px;background:var(--mint-soft);
-  color:var(--mint);box-shadow:0 6px 18px rgba(0,0,0,.04);
-  font-weight:600;font-size:.95rem;transition:transform .12s ease,border-color .15s;
+  border:1px solid var(--mint-border);
+  padding:.55rem .95rem;border-radius:999px;
+  background:var(--mint-soft);color:var(--mint);
 }
-.chip:hover{transform:translateY(-1px);border-color:var(--mint)}
-.chip.active{background:var(--mint-active);color:var(--mint-active-text);border-color:var(--mint-active)}
+.chip.active{background:var(--mint-active);color:#fff}
 
-/* ========== SEARCH ========== */
-.searchbar{display:flex;gap:10px;margin:12px 0}
-.searchbar input{flex:1;padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:#fff}
-
-/* ========== PRODUCT GRID & CARDS ========== */
+/* ========== GRID ========== */
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:var(--shadow)}
-.card img{width:100%;height:210px;object-fit:cover}
-.card .pad{padding:16px}
-.card h3{margin:0}
-.price{color:var(--accent-2);font-weight:800}
+.card{background:#fff;border-radius:20px;box-shadow:var(--shadow)}
+.card img{width:100%}
 
-/* ========== KATEGORİ KARTLARI ========== */
-.cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:24px}
-.cat-card{position:relative;display:block;aspect-ratio:16/9;border-radius:0;overflow:hidden;background:#fff;box-shadow:0 8px 20px rgba(0,0,0,.08)}
-.cat-card::before{content:"";position:absolute;inset:0;background:var(--cat-img, url('/assets/logo.jpeg')) center/cover no-repeat;border-radius:0}
-.cat-card span,.cat-card::after{display:none}
+/* ========== DRAWER (FIX) ========== */
+.chip-drawer{
+  position:fixed;
+  top:0;
+  left:0;
+  height:100vh;
+  width:260px;
+  background:#f6f1eb;
+  transform:translateX(-100%);
+  transition:.3s;
+  z-index:9999;
+  padding:20px;
+}
 
-/* ========== Üsttekiler hariç chipbar/tabs gizle (varsa) ========== */
-.chipbar:not(:first-of-type), #app .chipbar, #app .tabs{display:none !important}
+.chip-drawer.open{
+  transform:translateX(0);
+}
+
+.chip-list{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+/* ========== HAMBURGER (FIX) ========== */
+.hamburger{
+  display:none;
+  flex-direction:column;
+  gap:5px;
+  cursor:pointer;
+}
+
+.hamburger span{
+  width:24px;
+  height:2px;
+  background:#5a3421;
+}
 
 /* ========== RESPONSIVE ========== */
-@media (max-width:900px){
-  .nav{display:none}
-  .chip{font-size:.9rem;padding:.5rem .85rem}
-  .hero-card h2{white-space:normal;text-wrap:balance}
+@media (max-width:1024px){
+
+  .nav{display:none;}
+
+  .chipbar{display:none;} /* üstte gizle */
+
+  .hamburger{
+    display:flex;
+  }
+
 }
-
-/* ========== FOOTER ========== */
-.footer{text-align:center;padding:28px 0;margin-top:30px;border-top:1px solid var(--line);color:#7a7a7a}
-
-/* ========== MOBİL ========== */
-@media (max-width: 768px){
-  .container{ padding-left:12px !important; padding-right:12px !important; }
-  .header{ display:flex !important; justify-content:flex-start !important; align-items:center; gap:10px; padding:12px 0 !important; }
-  .brand{ margin:0 !important; justify-content:flex-start; gap:10px; }
-  .brand-text{ text-align:left; }
-  .brand-text h1{ margin:0; line-height:1.1; font-size:20px !important; }
-  .brand-text small{ font-size:12px !important; color:#8a6f5a; }
-  .logo{ height:64px !important; width:auto; }
-}
-
-/* ========== PRODUCT DETAILS ========== */
-.card .icerik{ margin-top:6px;border-top:1px solid var(--line); }
-.card .icerik summary{ cursor:pointer;font-weight:700;color:var(--mint); }
-.card .icerik ul{ color:#4a3a2f; }
-
-/* ========== DRAWER ========== */
-.chip-drawer{ background:#f6f1eb; }
-
-/* ========== HAMBURGER ========== */
-.hamburger span,.hamburger .bar{ background:#5a3421; }
-
-.home-subtitle{ color:var(--mint); }
