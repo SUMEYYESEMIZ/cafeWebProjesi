@@ -1,27 +1,27 @@
 :root{
-  --bg:#F6F1EB;              /* açık krem-kahve arası */
-  --text:#2b1f18;            /* koyu kahve */
-  --muted:#7a6a5f;
+  --bg:#F6F1EB;
+  --text:#2b1f18;
+  --muted:#8a6f5a;
 
-  --accent:#6b3e26;          /* ana kahve */
-  --accent-2:#d07a2d;        /* turuncuya yakın vurgu */
+  --accent:#6b3e26;
+  --accent-2:#d07a2d;
 
   --chip:#efe4db;
   --line:#e6ddd6;
   --card:#ffffff;
-  --shadow:0 8px 30px rgba(0,0,0,.06);
+  --shadow:0 8px 30px rgba(90,52,33,.08);
 
-  /* Yeni kahve palet */
-  --mint:#6b3e26;            /* eski yeşil yerine kahve */
-  --mint-soft:#f7efe8;       /* çok açık kahve arka plan */
-  --mint-border:#e8d8cc;
-  --mint-active:#d07a2d;     /* aktifte turuncu */
+  /* Kahve palet */
+  --mint:#5a3421;
+  --mint-soft:#f3e7dc;
+  --mint-border:#e8d6c6;
+  --mint-active:#d07a2d;
   --mint-active-text:#fff;
 }
 
 *{box-sizing:border-box}
 html,body{
-  margin:0;padding:0;background:var(--bg);color:var(--text);
+  margin:0;padding:0;background:linear-gradient(180deg,#f6f1eb,#efe4db);color:var(--text);
   font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;
 }
 a{color:var(--text);text-decoration:none}
@@ -30,11 +30,11 @@ a:hover{opacity:.85}
 
 /* ========== TOPBAR ========== */
 .topbar{
-  background:repeating-linear-gradient(135deg,#EAF6EF 0 18px,#DCEEDC 18px 36px);
-  color:#1f3d31;font-size:13px;
+  background:repeating-linear-gradient(135deg,#f3e7dc 0 18px,#e8d6c6 18px 36px);
+  color:#4a2c1d;font-size:13px;
 }
 .topbar-inner{display:flex;justify-content:space-between;align-items:center;padding:8px 0}
-.topbar a{color:var(--mint)}
+.topbar a{color:#7a4a2f}
 
 /* ========== HEADER ========== */
 .header{
@@ -44,9 +44,16 @@ a:hover{opacity:.85}
 .brand{display:flex;align-items:center;gap:12px}
 .logo{height:150px}
 .brand-text h1{font-size:28px;margin:0;color:var(--mint);font-weight:800;letter-spacing:.2px}
-.brand-text small{color:#5f7b70;font-size:16px}
+.brand-text small{color:#8a6f5a;font-size:16px}
 .nav a{margin:0 10px}
-.btn{background:var(--accent);color:#fff;padding:12px 18px;border-radius:12px;border:none;cursor:pointer;box-shadow:var(--shadow)}
+.btn{
+  background:linear-gradient(135deg,#7a4a2f,#5a3421);
+  color:#fff;padding:12px 18px;border-radius:12px;border:none;cursor:pointer;box-shadow:var(--shadow)
+}
+.btn:hover{
+  background:linear-gradient(135deg,#d07a2d,#7a4a2f);
+  transform:translateY(-1px)
+}
 .btn.small{padding:8px 12px;border-radius:10px}
 
 /* ========== HERO ========== */
@@ -57,15 +64,15 @@ a:hover{opacity:.85}
   border-radius:18px;padding:28px;box-shadow:var(--shadow);
   text-align:center;
 }
-.badge{display:inline-block;background:#EAF6EF;color:var(--mint);padding:6px 12px;border-radius:999px;font-size:12px}
+.badge{display:inline-block;background:#f3e7dc;color:var(--mint);padding:6px 12px;border-radius:999px;font-size:12px}
 .hero-card h2{color:var(--mint);white-space:nowrap;font-size:clamp(28px,5vw,56px);line-height:1.1;margin:.75rem 0 .5rem}
-.hero-card p{color:#5f7b70;font-size:clamp(15px,1.8vw,18px)}
+.hero-card p{color:#8a6f5a;font-size:clamp(15px,1.8vw,18px)}
 .hero-card .actions{display:flex;justify-content:center;gap:12px;margin-top:12px}
 .hero-card .btn{background:var(--mint);border:1px solid var(--mint)}
 .hero-card .btn.small{background:var(--mint-active);border-color:var(--mint-active)}
 .hero-card .btn:hover{filter:brightness(1.06)}
 
-/* ========== CHIP NAV (mint uyumlu) ========== */
+/* ========== CHIP NAV ========== */
 .chipbar{display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem .8rem;margin:16px auto 6px;align-items:center;width:100%}
 .chip{
   appearance:none;border:1px solid var(--mint-border);cursor:pointer;
@@ -107,107 +114,26 @@ a:hover{opacity:.85}
 /* ========== FOOTER ========== */
 .footer{text-align:center;padding:28px 0;margin-top:30px;border-top:1px solid var(--line);color:#7a7a7a}
 
-/* ========== MOBİL SOLA YASLA (hamburgersiz görünüm de düzgün olsun) ========== */
+/* ========== MOBİL ========== */
 @media (max-width: 768px){
   .container{ padding-left:12px !important; padding-right:12px !important; }
   .header{ display:flex !important; justify-content:flex-start !important; align-items:center; gap:10px; padding:12px 0 !important; }
   .brand{ margin:0 !important; justify-content:flex-start; gap:10px; }
   .brand-text{ text-align:left; }
   .brand-text h1{ margin:0; line-height:1.1; font-size:20px !important; }
-  .brand-text small{ font-size:12px !important; color:#5f7b70; }
+  .brand-text small{ font-size:12px !important; color:#8a6f5a; }
   .logo{ height:64px !important; width:auto; }
 }
-/* ========== PRODUCT DETAILS (İÇİNDEKİLER) ========== */
-.card .icerik{ 
-  margin-top:6px;
-  border-top:1px solid var(--line);
-}
-.card .icerik summary{
-  cursor:pointer;
-  list-style:none;
-  font-weight:700;
-  color:var(--mint);
-  padding:6px 0;
-  display:flex; align-items:center; gap:6px;
-}
-.card .icerik summary::-webkit-details-marker{ display:none; }
-.card .icerik summary::before{ content:"▸"; font-weight:900; }
-.card .icerik[open] summary::before{ content:"▾"; }
 
-.card .icerik ul{
-  margin:6px 0 0 18px;
-  padding:0 0 6px 0;
-  color:#3a3a3a;
-  font-size:.95rem; line-height:1.45;
-}
-.card .icerik ul li{ margin:.15rem 0; }
+/* ========== PRODUCT DETAILS ========== */
+.card .icerik{ margin-top:6px;border-top:1px solid var(--line); }
+.card .icerik summary{ cursor:pointer;font-weight:700;color:var(--mint); }
+.card .icerik ul{ color:#4a3a2f; }
 
-/* =========================
-   >>> HAMBURGER & DRAWER (final) <<<
-   (Bu bölüm EN SONA konmalı)
-========================= */
+/* ========== DRAWER ========== */
+.chip-drawer{ background:#f6f1eb; }
 
-/* Varsayılan: masaüstünde gizli */
-.hamburger{
-  display:none;
-  width:44px; height:44px; padding:8px;
-  border:0; border-radius:10px; background:transparent; cursor:pointer;
-}
+/* ========== HAMBURGER ========== */
+.hamburger span,.hamburger .bar{ background:#5a3421; }
 
-/* Drawer (soldan kayan panel) */
-.chip-drawer{
-  position:fixed; top:0; left:0; height:100dvh; width:min(86vw,360px);
-  background:#f6fbf8; box-shadow:0 0 30px rgba(0,0,0,.15);
-  transform:translateX(-100%); transition:transform .25s ease;
-  padding:18px; z-index:1001; overflow-y:auto;
-}
-.chip-drawer.open{ transform:translateX(0); }
-
-/* Drawer içeriği (chip’ler dikey) */
-.chip-list{ display:flex; gap:12px; flex-direction:column; }
-
-/* Arka plan */
-.backdrop{ position:fixed; inset:0; background:rgba(0,0,0,.35); z-index:1000; }
-
-/* Mobil/Tablet: hamburger görünür & 3 çizgi ALT ALTA */
-@media (max-width:1024px){
-  .header{ justify-content:flex-start; gap:12px; }
-  .nav{ display:none; }
-  .chipbar{ display:none; }                 /* yatay chipbar yerine drawer */
-
-  .hamburger{
-    display:inline-flex;                    /* göster */
-    align-items:center; justify-content:center;
-    flex-direction:column;                  /* ÇİZGİLER ALT ALTA */
-    gap:6px;                                /* aralık */
-    order:-1;                               /* solda dursun */
-    margin-right:8px;
-  }
-}
-
-/* Çizgiler (koyu yeşil, alt alta) */
-.hamburger span,
-.hamburger .bar{
-  display:block;
-  width:24px;
-  height:2px;
-  background:#1b4d3e;                       /* koyu yeşil */
-  border-radius:2px;
-  transition:transform .25s, opacity .25s;
-}
-
-/* Açıkken X animasyonu (opsiyonel) */
-.hamburger.is-open span:nth-child(1),
-.hamburger.is-open .bar:nth-child(1){ transform: translateY(8px) rotate(45deg); }
-.hamburger.is-open span:nth-child(2),
-.hamburger.is-open .bar:nth-child(2){ opacity:0; }
-.hamburger.is-open span:nth-child(3),
-.hamburger.is-open .bar:nth-child(3){ transform: translateY(-8px) rotate(-45deg); }
-.home-subtitle{
-  margin: 6px 0 12px;
-  font-size: 22px;
-  font-weight: 800;
-  color: var(--mint);
-}
-
-
+.home-subtitle{ color:var(--mint); }
