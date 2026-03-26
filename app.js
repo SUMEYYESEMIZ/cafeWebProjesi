@@ -139,6 +139,11 @@ const DATA_PDF = [
   name: "Peynir Tabağı(görsel temsilidir)",
   price: "120 TL",
   image: "public/assets/menu/kahvalti/peynirt.png"},
+   { 
+  category: "Kahvaltı",
+  name: "Ekstra kahvaltılık(zeytin,pekmez vs)",
+  price: "40 TL",
+  image: "public/assets/menu/kahvalti/ekstra.png"},
 { 
   category: "Kahvaltı",
   name: "Karper Peynir Adet",
