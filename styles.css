@@ -1,20 +1,21 @@
-/* ========== THEME ========== */
 :root{
-  --bg:#F9F5F9;
-  --text:#1f1f1f;
-  --muted:#6b6b6b;
-  --accent:#2f6f61;
-  --accent-2:#C77A2B;
-  --chip:#f1e9e2;
-  --line:#ececec;
+  --bg:#F6F1EB;              /* açık krem-kahve arası */
+  --text:#2b1f18;            /* koyu kahve */
+  --muted:#7a6a5f;
+
+  --accent:#6b3e26;          /* ana kahve */
+  --accent-2:#d07a2d;        /* turuncuya yakın vurgu */
+
+  --chip:#efe4db;
+  --line:#e6ddd6;
   --card:#ffffff;
   --shadow:0 8px 30px rgba(0,0,0,.06);
 
-  /* Mint palet */
-  --mint:#2f6f61;
-  --mint-soft:#f3fbf6;
-  --mint-border:#d7efe4;
-  --mint-active:#49b59e;
+  /* Yeni kahve palet */
+  --mint:#6b3e26;            /* eski yeşil yerine kahve */
+  --mint-soft:#f7efe8;       /* çok açık kahve arka plan */
+  --mint-border:#e8d8cc;
+  --mint-active:#d07a2d;     /* aktifte turuncu */
   --mint-active-text:#fff;
 }
 
