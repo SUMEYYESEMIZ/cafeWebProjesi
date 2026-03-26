@@ -94,7 +94,9 @@ a:hover{opacity:.85}
 .cat-card span,.cat-card::after{display:none}
 
 /* ========== Üsttekiler hariç chipbar/tabs gizle (varsa) ========== */
-.chipbar:not(:first-of-type), #app .chipbar, #app .tabs{display:none !important}
+#app .chipbar, #app .tabs{
+  display:none !important
+}
 
 /* ========== RESPONSIVE ========== */
 @media (max-width:900px){
