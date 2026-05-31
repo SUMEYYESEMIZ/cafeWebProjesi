@@ -152,12 +152,12 @@ const DATA_PDF = [
 { 
   category: "Kahvaltı",
   name: "Lahana Sarma(8 adet)",
-  price: "150 TL",
+  price: "175 TL",
   image: "public/assets/menu/kahvalti/lahana.png"},
 { 
   category: "Kahvaltı",
   name: "Yaprak Sarma(10 adet)",
-  price: "150 TL",
+  price: "175 TL",
   image: "public/assets/menu/kahvalti/yaprak.png"},
 
 
@@ -253,7 +253,7 @@ const DATA_PDF = [
   { category:"Börek Çeşitleri", name:"Ispanaklı Kol Böreği", price:"150 TL", image:"public/assets/menu/borek/ispanakli-kol.jpg" },
   { category:"Börek Çeşitleri", name:"Su Böreği", price:"150 TL", image:"public/assets/menu/borek/su-boregi.jpg" },
   { category:"Börek Çeşitleri", name:"Kürt Böreği", price:"150 TL", image:"public/assets/menu/borek/kurt-boregi.png" },
-  { category:"Börek Çeşitleri", name:"Sigara Börek Çeşitleri", price:"50 TL", image:"public/assets/menu/borek/sigar.png" },
+  { category:"Börek Çeşitleri", name:"Kalem Börek Çeşitleri", price:"50 TL", image:"public/assets/menu/borek/sigar.png" },
  
 
   // POĞAÇA ÇEŞİTLERİ
@@ -316,7 +316,7 @@ const DATA_PDF = [
   { category:"Sütlü Tatlılar", name:"Profiterol", price:"150 TL", image:"public/assets/menu/sutlu/profiterol.png" },
   { category:"Sütlü Tatlılar", name:"Trileçe (Karamelli/Frambuazlı)", price:"125 TL", image:"public/assets/menu/sutlu/trilece.png" },
   { category:"Sütlü Tatlılar", name:"Magnolya (Lotus/Çilek/Muz/Oreo)", price:"150 TL", image:"public/assets/menu/sutlu/magnolia.png" },
-  { category:"Sütlü Tatlılar", name:"Supangle", price:"130 TL", image:"public/assets/menu/sutlu/supangle.png" },
+  { category:"Sütlü Tatlılar", name:"Supangle", price:"150 TL", image:"public/assets/menu/sutlu/supangle.png" },
   { category:"Sütlü Tatlılar", name:"Kaşık Pasta (Çilek/Orman Meyve)", price:"150 TL", image:"public/assets/menu/sutlu/kasik-pasta.png" },
   { category:"Sütlü Tatlılar", name:"Tiramisu", price:"125 TL", image:"public/assets/menu/sutlu/tiramisu.png" },
   { category:"Sütlü Tatlılar", name:"Ekler (Porsiyon)", price:"150 TL", image:"public/assets/menu/sutlu/ekler.png" },
