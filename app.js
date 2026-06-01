@@ -406,6 +406,7 @@ const DATA_PDF = [
   { category:"Sıcak İçecekler", name:"Ballı Süt",            price:"100 TL", image:"public/assets/menu/sicak-icecekler/ballisut.png" },
 
   // SOĞUK İÇECEKLER
+  { category:"Soğuk İçecekler", name:"Ev Yapımı Limonata", price:"75 TL", image:"public/assets/menu/soguk-icecek/lim.png" },
   { category:"Soğuk İçecekler", name:"Su (0.5 lt)", price:"20 TL", image:"public/assets/menu/soguk-icecek/su-05.jpg" },
   { category:"Soğuk İçecekler", name:"Teneke Coca Cola (330 ml)", price:"60 TL", image:"public/assets/menu/soguk-icecek/cola-330.jpg" },
   { category:"Soğuk İçecekler", name:"Şişe Coca Cola", price:"50 TL", image:"public/assets/menu/soguk-icecek/cola-sise.jpg" },
