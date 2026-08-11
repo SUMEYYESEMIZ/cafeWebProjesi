@@ -416,7 +416,7 @@ const DATA_PDF = [
   { category:"Soğuk İçecekler", name:"Cappy (330 ml)", price:"60 TL", image:"public/assets/menu/soguk-icecek/cappy-330.jpg" },
   { category:"Soğuk İçecekler", name:"Redbull (250 ml)", price:"70 TL", image:"public/assets/menu/soguk-icecek/redbull-250.jpg" },
   { category:"Soğuk İçecekler", name:"Didi (250 ml)", price:"30 TL", image:"public/assets/menu/soguk-icecek/didi-250.jpg" },
-  { category:"Soğuk İçecekler", name:"Lipton Ice Tea (330 ml)", price:"75 TL", image:"public/assets/menu/soguk-icecek/lipton-330.jpg" },
+  { category:"Soğuk İçecekler", name:"Lipton Ice Tea (330 ml)", price:"60 TL", image:"public/assets/menu/soguk-icecek/lipton-330.jpg" },
   { category:"Soğuk İçecekler", name:"Beypazarı Soda (200 ml)", price:"25 TL", image:"public/assets/menu/soguk-icecek/beypazari-200.jpg" },
   { category:"Soğuk İçecekler", name:"Meyveli Soda Çeşitleri (200 ml)", price:"40 TL", image:"public/assets/menu/soguk-icecek/meyveli-soda-200.jpg" },
   { category:"Soğuk İçecekler", name:"Ayran (200 ml)", price:"25 TL", image:"public/assets/menu/soguk-icecek/ayran-200.jpg" },
