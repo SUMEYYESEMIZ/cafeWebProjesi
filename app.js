@@ -70,7 +70,7 @@ const DATA_PDF = [
   {
     category: "Kahvaltı",
     name: "Simitçi Fırın Special Serpme (2 Kişilik)",
-    price: "1000 TL",
+    price: "1200 TL",
     image: "public/assets/menu/kahvalti/serpme.png",
     icerik: [
       "Menemen ve sahanda yumurta",
@@ -92,7 +92,7 @@ const DATA_PDF = [
 { 
   category: "Kahvaltı",
   name: "Gurme Kahvaltı Tabağı",
-  price: "375 TL",
+  price: "400 TL",
   image: "public/assets/menu/kahvalti/gurme.png",
   icerik: [
     "Seçme peynirler (beyaz, kaşar, karper peynir)",
@@ -110,7 +110,7 @@ const DATA_PDF = [
 { 
   category: "Kahvaltı",
   name: "Hızlı Simit Kahvaltı",
-  price: "200 TL",
+  price: "250 TL",
   image: "public/assets/menu/kahvalti/hizli-simit.png",
   icerik: [
     "Simit",
@@ -125,7 +125,7 @@ const DATA_PDF = [
 { 
   category: "Kahvaltı",
   name: "Söğüş Tabağı",
-  price: "120 TL",
+  price: "150 TL",
   image: "public/assets/menu/kahvalti/sogus.png",
   icerik: [
     "Domates",
@@ -137,7 +137,7 @@ const DATA_PDF = [
 { 
   category: "Kahvaltı",
   name: "Peynir Tabağı(görsel temsilidir)",
-  price: "130 TL",
+  price: "150 TL",
   image: "public/assets/menu/kahvalti/peynirt.png"},
    { 
   category: "Kahvaltı",
@@ -163,15 +163,15 @@ const DATA_PDF = [
 
   // SICAKLAR
   { category:"Sıcaklar", name:"Menemen (Klasik)", price:"175 TL", image:"public/assets/menu/sicaklar/menemen-klasik.png" },
-  { category:"Sıcaklar", name:"Menemen (Kaşarlı)",price:"200 TL", image:"public/assets/menu/sicaklar/menemen-kasarli.png" },
-  { category:"Sıcaklar", name:"Menemen (Sucuklu)", price:"230 TL", image:"public/assets/menu/sicaklar/menemen-sucuklu.png" },
+  { category:"Sıcaklar", name:"Menemen (Kaşarlı)",price:"220 TL", image:"public/assets/menu/sicaklar/menemen-kasarli.png" },
+  { category:"Sıcaklar", name:"Menemen (Sucuklu)", price:"250 TL", image:"public/assets/menu/sicaklar/menemen-sucuklu.png" },
   { category:"Sıcaklar", name:"Menemen (Kavurmalı)", price:"300 TL", image:"public/assets/menu/sicaklar/menemen-kavurma.png" },
   { category:"Sıcaklar", name:"Sahanda Yumurta (Klasik)", price:"150 TL", image:"public/assets/menu/sicaklar/sahanda-klasik.png" },
-  { category:"Sıcaklar", name:"Sahanda Yumurta (Sucuklu)", price:"230 TL", image:"public/assets/menu/sicaklar/sahanda-sucuklu.png" },
+  { category:"Sıcaklar", name:"Sahanda Yumurta (Sucuklu)", price:"220 TL", image:"public/assets/menu/sicaklar/sahanda-sucuklu.png" },
   { category:"Sıcaklar", name:"Sahanda Yumurta (Kavurmalı)", price:"300 TL", image:"public/assets/menu/sicaklar/sahanda-kavurma.png" },
-  { category:"Sıcaklar", name:"Patates Kızartması", price:"100 TL", image:"public/assets/menu/sicaklar/patates.jpg" },
-  { category:"Sıcaklar", name:"Sucuk Tava(10 adet)", price:"250 TL", image:"public/assets/menu/sicaklar/sucuktava.png" },
-  { category:"Sıcaklar", name:"6'lı Sigara Böreği", price:"175 TL", image:"public/assets/menu/sicaklar/sigara.png" },
+  { category:"Sıcaklar", name:"Patates Kızartması", price:"120 TL", image:"public/assets/menu/sicaklar/patates.jpg" },
+  { category:"Sıcaklar", name:"Sucuk Tava(10 adet)", price:"200 TL", image:"public/assets/menu/sicaklar/sucuktava.png" },
+  { category:"Sıcaklar", name:"6'lı Sigara Böreği", price:"250 TL", image:"public/assets/menu/sicaklar/sigara.png" },
   { category:"Sıcaklar", name:"Atıştırmalık Mix", price:"200 TL", image:"public/assets/menu/sicaklar/mix.png" },
   
 
@@ -179,7 +179,7 @@ const DATA_PDF = [
 { 
   category: "Fit Kahvaltılar", 
   name: "Fit Avokado Tabağı", 
-  price: "250 TL", 
+  price: "300 TL", 
   image: "public/assets/menu/fit/avokado.png",
   icerik: [
     "Yarım avokado",
@@ -194,7 +194,7 @@ const DATA_PDF = [
 { 
   category: "Fit Kahvaltılar", 
   name: "Granola Bowl(meyveler değişiklik gösterebilir", 
-  price: "220 TL", 
+  price: "250 TL", 
   image: "public/assets/menu/fit/granola.png",
   icerik: [
     "Yoğurt",
@@ -208,7 +208,7 @@ const DATA_PDF = [
 { 
   category: "Fit Kahvaltılar", 
   name: "Fit Omlet", 
-  price: "220 TL", 
+  price: "270 TL", 
   image: "public/assets/menu/fit/fıtomlet.png",
   icerik: [
     "Omlet",
@@ -224,17 +224,17 @@ const DATA_PDF = [
 
 
   // TOST ÇEŞİTLERİ
-  { category:"Tost Çeşitleri", name:"Kaşarlı Tost (garnitürlü)", price:"200 TL", image:"public/assets/menu/tost-cesitleri/kasarli.png" },
-  { category:"Tost Çeşitleri", name:"Karışık Tost (garnitürlü)", price:"230 TL", image:"public/assets/menu/tost-cesitleri/karisik.png" },
-  { category:"Tost Çeşitleri", name:"Kavurmalı Kaşarlı Tost (garnitürlü)", price:"300 TL", image:"public/assets/menu/tost-cesitleri/kavurmali.png" },
+  { category:"Tost Çeşitleri", name:"Kaşarlı Tost (garnitürlü)", price:"210 TL", image:"public/assets/menu/tost-cesitleri/kasarli.png" },
+  { category:"Tost Çeşitleri", name:"Karışık Tost (garnitürlü)", price:"250 TL", image:"public/assets/menu/tost-cesitleri/karisik.png" },
+  { category:"Tost Çeşitleri", name:"Kavurmalı Kaşarlı Tost (garnitürlü)", price:"350 TL", image:"public/assets/menu/tost-cesitleri/kavurmali.png" },
   { category:"Tost Çeşitleri", name:"Sucuklu Tost (garnitürlü)", price:"200 TL", image:"public/assets/menu/tost-cesitleri/sucuklu.png" },
 
   // SOĞUK SANDVİÇLER
-  { category:"Soğuk Sandviçler", name:"Bahçıvan Sandviç", price:"120 TL", image:"public/assets/menu/sandvic/bahcivan.jpg" },
-  { category:"Soğuk Sandviçler", name:"Klasik Sandviç", price:"120 TL", image:"public/assets/menu/sandvic/klasik.jpg" },
+  { category:"Soğuk Sandviçler", name:"Bahçıvan Sandviç", price:"140 TL", image:"public/assets/menu/sandvic/bahcivan.jpg" },
+  { category:"Soğuk Sandviçler", name:"Klasik Sandviç", price:"140 TL", image:"public/assets/menu/sandvic/klasik.jpg" },
   { category:"Soğuk Sandviçler", name:"Tonbalıklı Sandviç", price:"200 TL", image:"public/assets/menu/sandvic/ton.jpg" },
-  { category:"Soğuk Sandviçler", name:"Gurme Sandviç", price:"175 TL", image:"public/assets/menu/sandvic/urme-simit.jpg" },
-  { category:"Soğuk Sandviçler", name:"Avokadolu Sandviç", price:"175 TL", image:"public/assets/menu/sandvic/avokado.jpg" },
+  { category:"Soğuk Sandviçler", name:"Gurme Sandviç", price:"200 TL", image:"public/assets/menu/sandvic/urme-simit.jpg" },
+  { category:"Soğuk Sandviçler", name:"Avokadolu Sandviç", price:"200 TL", image:"public/assets/menu/sandvic/avokado.jpg" },
 
   // SİMİT ÇEŞİTLERİ
   { category:"Simit Çeşitleri", name:"Çıtır Simit", price:"25 TL", image:"public/assets/menu/simit/citir.png" },
@@ -244,15 +244,15 @@ const DATA_PDF = [
   { category:"Simit Çeşitleri", name:"Kaşarlı Simit", price:"40 TL", image:"public/assets/menu/simit/kasarli.png" },
   { category:"Simit Çeşitleri", name:"Sucuklu Simit", price:"40 TL", image:"public/assets/menu/simit/sucuklu.png" },
   { category:"Simit Çeşitleri", name:"Tahinli Simit", price:"40 TL", image:"public/assets/menu/simit/tahinli.png" },
-  { category:"Simit Çeşitleri", name:"Pizza Simit", price:"120 TL", image:"public/assets/menu/simit/pizza.png" },
+  { category:"Simit Çeşitleri", name:"Pizza Simit", price:"140 TL", image:"public/assets/menu/simit/pizza.png" },
 
   // BÖREK ÇEŞİTLERİ
-  { category:"Börek Çeşitleri", name:"Kıymalı Kol Böreği", price:"150 TL", image:"public/assets/menu/borek/kiymali-kol.jpg" },
-  { category:"Börek Çeşitleri", name:"Peynirli Kol Böreği", price:"150 TL", image:"public/assets/menu/borek/peynirli-kol.jpg" },
-  { category:"Börek Çeşitleri", name:"Patatesli Kol Böreği", price:"150 TL", image:"public/assets/menu/borek/patatesli-kol.jpg" },
-  { category:"Börek Çeşitleri", name:"Ispanaklı Kol Böreği", price:"150 TL", image:"public/assets/menu/borek/ispanakli-kol.jpg" },
-  { category:"Börek Çeşitleri", name:"Su Böreği", price:"150 TL", image:"public/assets/menu/borek/su-boregi.jpg" },
-  { category:"Börek Çeşitleri", name:"Kürt Böreği", price:"150 TL", image:"public/assets/menu/borek/kurt-boregi.png" },
+  { category:"Börek Çeşitleri", name:"Kıymalı Kol Böreği", price:"175 TL", image:"public/assets/menu/borek/kiymali-kol.jpg" },
+  { category:"Börek Çeşitleri", name:"Peynirli Kol Böreği", price:"175 TL", image:"public/assets/menu/borek/peynirli-kol.jpg" },
+  { category:"Börek Çeşitleri", name:"Patatesli Kol Böreği", price:"175 TL", image:"public/assets/menu/borek/patatesli-kol.jpg" },
+  { category:"Börek Çeşitleri", name:"Ispanaklı Kol Böreği", price:"175 TL", image:"public/assets/menu/borek/ispanakli-kol.jpg" },
+  { category:"Börek Çeşitleri", name:"Su Böreği", price:"175 TL", image:"public/assets/menu/borek/su-boregi.jpg" },
+  { category:"Börek Çeşitleri", name:"Kürt Böreği", price:"175 TL", image:"public/assets/menu/borek/kurt-boregi.png" },
   { category:"Börek Çeşitleri", name:"Kalem Börek Çeşitleri", price:"50 TL", image:"public/assets/menu/borek/sigar.png" },
  
 
@@ -278,120 +278,120 @@ const DATA_PDF = [
   { category:"Açma Çeşitleri", name:"Haşhaşlı Açma", price:"40 TL", image:"public/assets/menu/acma/hashasli.png" },
 
   // FIRINDAN LEZZETLER
- { category:"Fırından Lezzetler", name:"Donut", price:"70 TL", image:"public/assets/menu/firindan/donut.png" },
- { category:"Fırından Lezzetler", name:"Berliner", price:"80 TL", image:"public/assets/menu/firindan/berliner.png" },
- { category:"Fırından Lezzetler", name:"Cookie", price:"60 TL", image:"public/assets/menu/firindan/cookie.png" },
- { category:"Fırından Lezzetler", name:"Havuç-Tarçın Kek", price:"60 TL", image:"public/assets/menu/firindan/havuc-tarcin.png" },
- { category:"Fırından Lezzetler", name:"Kakao-Ceviz Kek", price:"60 TL", image:"public/assets/menu/firindan/kakao-ceviz.png" },
- { category:"Fırından Lezzetler", name:"Bursa Lokumu", price:"60 TL", image:"public/assets/menu/firindan/bursalokum.png" },
- { category:"Fırından Lezzetler", name:"Kruvasan(sade)", price:"40 TL", image:"public/assets/menu/firindan/sadekru.png" },
- { category:"Fırından Lezzetler", name:"Kruvasan(çikolatalı)", price:"70 TL", image:"public/assets/menu/firindan/cikkru.png" },
-  { category:"Fırından Lezzetler", name:"Tahinli Çörek", price:"100 TL", image:"public/assets/menu/firindan/tahinli-corek.png" },
-  { category:"Fırından Lezzetler", name:"Paskalya Çöreği", price:"80 TL", image:"public/assets/menu/firindan/paskalya.png" },
+ { category:"Fırından Lezzetler", name:"Donut", price:"75 TL", image:"public/assets/menu/firindan/donut.png" },
+ { category:"Fırından Lezzetler", name:"Berliner", price:"125 TL", image:"public/assets/menu/firindan/berliner.png" },
+ { category:"Fırından Lezzetler", name:"Cookie", price:"100 TL", image:"public/assets/menu/firindan/cookie.png" },
+ { category:"Fırından Lezzetler", name:"Havuç-Tarçın Kek", price:"75 TL", image:"public/assets/menu/firindan/havuc-tarcin.png" },
+ { category:"Fırından Lezzetler", name:"Kakao-Ceviz Kek", price:"75 TL", image:"public/assets/menu/firindan/kakao-ceviz.png" },
+ { category:"Fırından Lezzetler", name:"Bursa Lokumu", price:"75 TL", image:"public/assets/menu/firindan/bursalokum.png" },
+ { category:"Fırından Lezzetler", name:"Kruvasan(sade)", price:"50 TL", image:"public/assets/menu/firindan/sadekru.png" },
+ { category:"Fırından Lezzetler", name:"Kruvasan(çikolatalı)", price:"75 TL", image:"public/assets/menu/firindan/cikkru.png" },
+  { category:"Fırından Lezzetler", name:"Tahinli Çörek", price:"120 TL", image:"public/assets/menu/firindan/tahinli-corek.png" },
+  { category:"Fırından Lezzetler", name:"Paskalya Çöreği", price:"75 TL", image:"public/assets/menu/firindan/paskalya.png" },
   { category:"Fırından Lezzetler", name:"Ay Çöreği", price:"50 TL", image:"public/assets/menu/firindan/ay-coregi.png" },
-  { category:"Fırından Lezzetler", name:"Kete", price:"60 TL", image:"public/assets/menu/firindan/kete.png" },
+  { category:"Fırından Lezzetler", name:"Kete", price:"75 TL", image:"public/assets/menu/firindan/kete.png" },
   { category:"Fırından Lezzetler", name:"İzmir Bombası", price:"50 TL", image:"public/assets/menu/firindan/izmir-bombasi.png" },
-  { category:"Fırından Lezzetler", name:"Üzümlü Kesme", price:"60 TL", image:"public/assets/menu/firindan/uzumlu-kesme.png" },
-  { category:"Fırından Lezzetler", name:"Çatal Kurabiye", price:"60 TL", image:"public/assets/menu/firindan/catal.png" },
-  { category:"Fırından Lezzetler", name:"Şam Kurabiyesi", price:"60 TL", image:"public/assets/menu/firindan/sam-kurabiye.png" },
-  { category:"Fırından Lezzetler", name:"Elmalı Turta", price:"60 TL", image:"public/assets/menu/firindan/elmali-turta.png" },
-  { category:"Fırından Lezzetler", name:"Elmalı Turt", price:"100 TL", image:"public/assets/menu/firindan/elmali-turt.png" },
-  { category:"Fırından Lezzetler", name:"Muffin Kek", price:"60 TL", image:"public/assets/menu/firindan/muffin.png" },
-  { category:"Fırından Lezzetler", name:"Un Kurabiyesi", price:"60 TL", image:"public/assets/menu/firindan/un-kurabiyesi.png" },
+  { category:"Fırından Lezzetler", name:"Üzümlü Kesme", price:"75 TL", image:"public/assets/menu/firindan/uzumlu-kesme.png" },
+  { category:"Fırından Lezzetler", name:"Çatal Kurabiye", price:"75 TL", image:"public/assets/menu/firindan/catal.png" },
+  { category:"Fırından Lezzetler", name:"Şam Kurabiyesi", price:"75 TL", image:"public/assets/menu/firindan/sam-kurabiye.png" },
+  { category:"Fırından Lezzetler", name:"Elmalı Turta", price:"75 TL", image:"public/assets/menu/firindan/elmali-turta.png" },
+  { category:"Fırından Lezzetler", name:"Elmalı Turt", price:"120 TL", image:"public/assets/menu/firindan/elmali-turt.png" },
+  { category:"Fırından Lezzetler", name:"Muffin Kek", price:"75 TL", image:"public/assets/menu/firindan/muffin.png" },
+  { category:"Fırından Lezzetler", name:"Un Kurabiyesi", price:"75 TL", image:"public/assets/menu/firindan/un-kurabiyesi.png" },
 
   // KURABİYE (Kuru Pasta Çeşitleri)
-  { category:"Kurabiye", name:"Tatlı Kurabiye ", price:"150 TL", image:"public/assets/menu/kurabiye/tatli-250.png" },
-  { category:"Kurabiye", name:"Tuzlu Kurabiye ", price:"150 TL", image:"public/assets/menu/kurabiye/tuzlu-250.png" },
-  { category:"Kurabiye", name:"Karışık Kurabiye ", price:"150 TL", image:"public/assets/menu/kurabiye/karisik-250.png" },
-  { category:"Kurabiye", name:"Special Kurabiye ", price:"250 TL", image:"public/assets/menu/kurabiye/special-250.png" },
+  { category:"Kurabiye", name:"Tatlı Kurabiye ", price:"175 TL", image:"public/assets/menu/kurabiye/tatli-250.png" },
+  { category:"Kurabiye", name:"Tuzlu Kurabiye ", price:"175 TL", image:"public/assets/menu/kurabiye/tuzlu-250.png" },
+  { category:"Kurabiye", name:"Karışık Kurabiye ", price:"175 TL", image:"public/assets/menu/kurabiye/karisik-250.png" },
+  { category:"Kurabiye", name:"Special Kurabiye ", price:"300 TL", image:"public/assets/menu/kurabiye/special-250.png" },
 
 
   // SÜTLÜ TATLILAR
-  { category:"Sütlü Tatlılar", name:"Soğuk Fıstıklı Baklava (Porsiyon)", price:"250 TL", image:"public/assets/menu/sutlu/soguk-fistikli.png" },
+  { category:"Sütlü Tatlılar", name:"Soğuk Fıstıklı Baklava (Porsiyon)", price:"300 TL", image:"public/assets/menu/sutlu/soguk-fistikli.png" },
   { category:"Sütlü Tatlılar", name:"Soğuk Fındıklı Baklava (Porsiyon)", price:"200 TL", image:"public/assets/menu/sutlu/soguk-findikli.png" },
-  { category:"Sütlü Tatlılar", name:"Cup Çeşitleri(Frambuaz/Profiterol/Böğürtlen)", price:"200 TL", image:"public/assets/menu/sutlu/cup.png" },
+  { category:"Sütlü Tatlılar", name:"Cup Çeşitleri(Frambuaz/Profiterol/Böğürtlen)", price:"250 TL", image:"public/assets/menu/sutlu/cup.png" },
   { category:"Sütlü Tatlılar", name:"Sütlaç", price:"100 TL", image:"public/assets/menu/sutlu/sutlac.png" },
-  { category:"Sütlü Tatlılar", name:"Islak Kek", price:"125 TL", image:"public/assets/menu/sutlu/islak-kek.png" },
-  { category:"Sütlü Tatlılar", name:"Kıbrıs Tatlısı", price:"125 TL", image:"public/assets/menu/sutlu/kibris.png" },
-  { category:"Sütlü Tatlılar", name:"Profiterol", price:"150 TL", image:"public/assets/menu/sutlu/profiterol.png" },
-  { category:"Sütlü Tatlılar", name:"Trileçe (Karamelli/Frambuazlı)", price:"125 TL", image:"public/assets/menu/sutlu/trilece.png" },
-  { category:"Sütlü Tatlılar", name:"Magnolya (Lotus/Çilek/Muz/Oreo)", price:"150 TL", image:"public/assets/menu/sutlu/magnolia.png" },
-  { category:"Sütlü Tatlılar", name:"Supangle", price:"150 TL", image:"public/assets/menu/sutlu/supangle.png" },
-  { category:"Sütlü Tatlılar", name:"Kaşık Pasta (Çilek/Orman Meyve)", price:"150 TL", image:"public/assets/menu/sutlu/kasik-pasta.png" },
-  { category:"Sütlü Tatlılar", name:"Tiramisu", price:"125 TL", image:"public/assets/menu/sutlu/tiramisu.png" },
-  { category:"Sütlü Tatlılar", name:"Ekler (Porsiyon)", price:"150 TL", image:"public/assets/menu/sutlu/ekler.png" },
-  { category:"Sütlü Tatlılar", name:"Muzlu–Çilekli Sarma (Porsiyon)", price:"150 TL", image:"public/assets/menu/sutlu/muzlu-cilekli-sarma.png" },
-  { category:"Sütlü Tatlılar", name:"Karışık Petifür (Porsiyon)", price:"150 TL", image:"public/assets/menu/sutlu/petifur.png" },
+  { category:"Sütlü Tatlılar", name:"Islak Kek", price:"150 TL", image:"public/assets/menu/sutlu/islak-kek.png" },
+  { category:"Sütlü Tatlılar", name:"Kıbrıs Tatlısı", price:"150 TL", image:"public/assets/menu/sutlu/kibris.png" },
+  { category:"Sütlü Tatlılar", name:"Profiterol", price:"175 TL", image:"public/assets/menu/sutlu/profiterol.png" },
+  { category:"Sütlü Tatlılar", name:"Trileçe (Karamelli/Frambuazlı)", price:"150 TL", image:"public/assets/menu/sutlu/trilece.png" },
+  { category:"Sütlü Tatlılar", name:"Magnolya (Lotus/Çilek/Muz/Oreo)", price:"175 TL", image:"public/assets/menu/sutlu/magnolia.png" },
+  { category:"Sütlü Tatlılar", name:"Supangle", price:"175 TL", image:"public/assets/menu/sutlu/supangle.png" },
+  { category:"Sütlü Tatlılar", name:"Kaşık Pasta (Çilek/Orman Meyve)", price:"175 TL", image:"public/assets/menu/sutlu/kasik-pasta.png" },
+  { category:"Sütlü Tatlılar", name:"Tiramisu", price:"150 TL", image:"public/assets/menu/sutlu/tiramisu.png" },
+  { category:"Sütlü Tatlılar", name:"Ekler (Porsiyon)", price:"175 TL", image:"public/assets/menu/sutlu/ekler.png" },
+  { category:"Sütlü Tatlılar", name:"Muzlu–Çilekli Sarma (Porsiyon)", price:"175 TL", image:"public/assets/menu/sutlu/muzlu-cilekli-sarma.png" },
+  { category:"Sütlü Tatlılar", name:"Karışık Petifür (Porsiyon)", price:"175 TL", image:"public/assets/menu/sutlu/petifur.png" },
 
   // TEK KİŞİLİK PASTALAR
-  { category:"Tek Kişilik Pastalar", name:"Cedric Grolet", price:"250 TL", image:"public/assets/menu/pasta/cedric.png" },
+  { category:"Tek Kişilik Pastalar", name:"Cedric Grolet", price:"300 TL", image:"public/assets/menu/pasta/cedric.png" },
   { category:"Tek Kişilik Pastalar", name:"Browni", price:"200 TL", image:"public/assets/menu/pasta/browni.png" },
-  { category:"Tek Kişilik Pastalar", name:"Figürlü Pasta Çeşitleri", price:"250 TL", image:"public/assets/menu/pasta/fig.png" },
-  { category:"Tek Kişilik Pastalar", name:"Karışık Meyveli", price:"175 TL", image:"public/assets/menu/pasta/k-meyveli.png" },
-  { category:"Tek Kişilik Pastalar", name:"Çikolatalı", price:"175 TL", image:"public/assets/menu/pasta/cikolatali.png" },
-  { category:"Tek Kişilik Pastalar", name:"Krokanlı", price:"175 TL", image:"public/assets/menu/pasta/krokan.png" },
-  { category:"Tek Kişilik Pastalar", name:"Çilekli", price:"175 TL", image:"public/assets/menu/pasta/cilekli.png" },
-  { category:"Tek Kişilik Pastalar", name:"Çilekli Çikolatalı", price:"175 TL", image:"public/assets/menu/pasta/cilekli-cikolatali.png" },
-  { category:"Tek Kişilik Pastalar", name:"Fıstık Çikolatalı", price:"175 TL", image:"public/assets/menu/pasta/fistik-cik.png" },
-  { category:"Tek Kişilik Pastalar", name:"Muzlu", price:"175 TL", image:"public/assets/menu/pasta/muzlu.png" },
-  { category:"Tek Kişilik Pastalar", name:"Muzlu Çikolatalı", price:"175 TL", image:"public/assets/menu/pasta/muzlu-cikolatali.png" },
-  { category:"Tek Kişilik Pastalar", name:"Jakonte", price:"175 TL", image:"public/assets/menu/pasta/jakonte.jpg" },
-  { category:"Tek Kişilik Pastalar", name:"Kalpli(frambuaz-beyaz çikolata) ", price:"175 TL", image:"public/assets/menu/pasta/kalpli.jpg" },
-  { category:"Tek Kişilik Pastalar", name:"Profiterollü", price:"175 TL", image:"public/assets/menu/pasta/profiterollu.jpg" },
-  { category:"Tek Kişilik Pastalar", name:"Malaga Pasta", price:"175 TL", image:"public/assets/menu/pasta/malaga.jpg" },
+  { category:"Tek Kişilik Pastalar", name:"Figürlü Pasta Çeşitleri", price:"300 TL", image:"public/assets/menu/pasta/fig.png" },
+  { category:"Tek Kişilik Pastalar", name:"Karışık Meyveli", price:"200 TL", image:"public/assets/menu/pasta/k-meyveli.png" },
+  { category:"Tek Kişilik Pastalar", name:"Çikolatalı", price:"200 TL", image:"public/assets/menu/pasta/cikolatali.png" },
+  { category:"Tek Kişilik Pastalar", name:"Krokanlı", price:"200 TL", image:"public/assets/menu/pasta/krokan.png" },
+  { category:"Tek Kişilik Pastalar", name:"Çilekli", price:"200 TL", image:"public/assets/menu/pasta/cilekli.png" },
+  { category:"Tek Kişilik Pastalar", name:"Çilekli Çikolatalı", price:"200 TL", image:"public/assets/menu/pasta/cilekli-cikolatali.png" },
+  { category:"Tek Kişilik Pastalar", name:"Fıstık Çikolatalı", price:"200 TL", image:"public/assets/menu/pasta/fistik-cik.png" },
+  { category:"Tek Kişilik Pastalar", name:"Muzlu", price:"200 TL", image:"public/assets/menu/pasta/muzlu.png" },
+  { category:"Tek Kişilik Pastalar", name:"Muzlu Çikolatalı", price:"200 TL", image:"public/assets/menu/pasta/muzlu-cikolatali.png" },
+  { category:"Tek Kişilik Pastalar", name:"Jakonte", price:"200 TL", image:"public/assets/menu/pasta/jakonte.jpg" },
+  { category:"Tek Kişilik Pastalar", name:"Kalpli(frambuaz-beyaz çikolata) ", price:"200 TL", image:"public/assets/menu/pasta/kalpli.jpg" },
+  { category:"Tek Kişilik Pastalar", name:"Profiterollü", price:"200 TL", image:"public/assets/menu/pasta/profiterollu.jpg" },
+  { category:"Tek Kişilik Pastalar", name:"Malaga Pasta", price:"200 TL", image:"public/assets/menu/pasta/malaga.jpg" },
   // TEK KİŞİLİK PASTALAR (ayrılmış)
-  { category:"Tek Kişilik Pastalar", name:"Cardinal",                price:"175 TL", image:"public/assets/menu/pasta/cardinal.jpg" },
-  { category:"Tek Kişilik Pastalar", name:"Ballı-Lotuslu",           price:"175 TL", image:"public/assets/menu/pasta/balli.jpg" },
-  { category:"Tek Kişilik Pastalar", name:"Velvet",                  price:"175 TL", image:"public/assets/menu/pasta/velvet.jpg" },
-  { category:"Tek Kişilik Pastalar", name:"Budapeşte",               price:"175 TL", image:"public/assets/menu/pasta/budapeste.png" },
-  { category:"Tek Kişilik Pastalar", name:"San Sebastian",           price:"250 TL", image:"public/assets/menu/pasta/san-sebastian.png" },
-  { category:"Tek Kişilik Pastalar", name:"Cheese Cake (Limon)",     price:"200 TL", image:"public/assets/menu/pasta/cheesecake-limon.jpg" },
-  { category:"Tek Kişilik Pastalar", name:"Cheese Cake (Frambuaz)",  price:"200 TL", image:"public/assets/menu/pasta/cheesecake-frambuaz.jpg" },
-  { category:"Tek Kişilik Pastalar", name:"Ibiza",                   price:"175 TL", image:"public/assets/menu/pasta/ibiza.png" },
-  { category:"Tek Kişilik Pastalar", name:"Mozaik",                  price:"175 TL", image:"public/assets/menu/pasta/mozaik.jpg" },
-  { category:"Tek Kişilik Pastalar", name:"Mois",                    price:"175 TL", image:"public/assets/menu/pasta/mois.png" },
+  { category:"Tek Kişilik Pastalar", name:"Cardinal",                price:"200 TL", image:"public/assets/menu/pasta/cardinal.jpg" },
+  { category:"Tek Kişilik Pastalar", name:"Ballı-Lotuslu",           price:"200 TL", image:"public/assets/menu/pasta/balli.jpg" },
+  { category:"Tek Kişilik Pastalar", name:"Velvet",                  price:"200 TL", image:"public/assets/menu/pasta/velvet.jpg" },
+  { category:"Tek Kişilik Pastalar", name:"Budapeşte",               price:"200 TL", image:"public/assets/menu/pasta/budapeste.png" },
+  { category:"Tek Kişilik Pastalar", name:"San Sebastian",           price:"300 TL", image:"public/assets/menu/pasta/san-sebastian.png" },
+  { category:"Tek Kişilik Pastalar", name:"Cheese Cake (Limon)",     price:"300 TL", image:"public/assets/menu/pasta/cheesecake-limon.jpg" },
+  { category:"Tek Kişilik Pastalar", name:"Cheese Cake (Frambuaz)",  price:"300 TL", image:"public/assets/menu/pasta/cheesecake-frambuaz.jpg" },
+  { category:"Tek Kişilik Pastalar", name:"Ibiza",                   price:"200 TL", image:"public/assets/menu/pasta/ibiza.png" },
+  { category:"Tek Kişilik Pastalar", name:"Mozaik",                  price:"200 TL", image:"public/assets/menu/pasta/mozaik.jpg" },
+  { category:"Tek Kişilik Pastalar", name:"Mois",                    price:"200 TL", image:"public/assets/menu/pasta/mois.png" },
 
 
   // ŞERBETLİ TATLILAR
   { category:"Şerbetli Tatlılar", name:"Kare Fıstıklı Kadayıf (Porsiyon)", price:"280 TL", image:"public/assets/menu/serbetli/kare-fistikli-kadayif.png" },
   { category:"Şerbetli Tatlılar", name:"Kare Cevizli Kadayıf (Porsiyon)", price:"150 TL", image:"public/assets/menu/serbetli/kare-cevizli-kadayif.png" },
   { category:"Şerbetli Tatlılar", name:"Cevizli Baklava (Porsiyon)", price:"150 TL", image:"public/assets/menu/serbetli/cevizli-baklava.png" },
-  { category:"Şerbetli Tatlılar", name:"Kuru Baklava (Porsiyon)", price:"280 TL", image:"public/assets/menu/serbetli/kuru-baklava.png" },
-  { category:"Şerbetli Tatlılar", name:"Sarı Burma (Cevizli) (Porsiyon)", price:"180 TL", image:"public/assets/menu/serbetli/sari-burma.png" },
-  { category:"Şerbetli Tatlılar", name:"Cevizli Midye (Porsiyon)", price:"180 TL", image:"public/assets/menu/serbetli/cevizli-midye.png" },
+  { category:"Şerbetli Tatlılar", name:"Kuru Baklava (Porsiyon)", price:"300 TL", image:"public/assets/menu/serbetli/kuru-baklava.png" },
+  { category:"Şerbetli Tatlılar", name:"Sarı Burma (Cevizli) (Porsiyon)", price:"200 TL", image:"public/assets/menu/serbetli/sari-burma.png" },
+  { category:"Şerbetli Tatlılar", name:"Cevizli Midye (Porsiyon)", price:"200 TL", image:"public/assets/menu/serbetli/cevizli-midye.png" },
   { category:"Şerbetli Tatlılar", name:"Bülbül Yuvası (Porsiyon)", price:"180 TL", image:"public/assets/menu/serbetli/bulbul-yuvasi.png" },
   { category:"Şerbetli Tatlılar", name:"Cevizli Sultan (Porsiyon)", price:"150 TL", image:"public/assets/menu/serbetli/cevizli-sultan.png" },
   { category:"Şerbetli Tatlılar", name:"Fıstıklı Havuç Dilim (Porsiyon)", price:"280 TL", image:"public/assets/menu/serbetli/havuc-dilim.jpg" },
   { category:"Şerbetli Tatlılar", name:"Cevizli Ev Baklavası (Porsiyon)", price:"150 TL", image:"public/assets/menu/serbetli/cevizli-baklava.png" },
-  { category:"Şerbetli Tatlılar", name:"Şekerpare (Porsiyon)", price:"80 TL", image:"public/assets/menu/serbetli/sekerpare.png" },
+  { category:"Şerbetli Tatlılar", name:"Şekerpare (Porsiyon)", price:"100 TL", image:"public/assets/menu/serbetli/sekerpare.png" },
 
  
 
   // KAHVE (sıcak + soğuk)
-  { category:"Kahve", name:"Espresso Single", price:"90 TL", image:"public/assets/menu/kahve/espresso.png" },
-  { category:"Kahve", name:"Espresso Double", price:"110 TL", image:"public/assets/menu/kahve/espresso.png" },
-  { category:"Kahve", name:"Americano", price:"140 TL", image:"public/assets/menu/kahve/americano.png" },
-  { category:"Kahve", name:"Filtre Kahve", price:"140 TL", image:"public/assets/menu/kahve/filtre.png" },
-  { category:"Kahve", name:"Latte", price:"160 TL", image:"public/assets/menu/kahve/latte.png" },
-  { category:"Kahve", name:"Cappuccino", price:"160 TL", image:"public/assets/menu/kahve/latte.png" },
-  { category:"Kahve", name:"Flat White", price:"160 TL", image:"public/assets/menu/kahve/latte.png" },
-  { category:"Kahve", name:"Macchiato", price:"160 TL", image:"public/assets/menu/kahve/latte.png" },
+  { category:"Kahve", name:"Espresso Single", price:"100 TL", image:"public/assets/menu/kahve/espresso.png" },
+  { category:"Kahve", name:"Espresso Double", price:"120 TL", image:"public/assets/menu/kahve/espresso.png" },
+  { category:"Kahve", name:"Americano", price:"150 TL", image:"public/assets/menu/kahve/americano.png" },
+  { category:"Kahve", name:"Filtre Kahve", price:"150 TL", image:"public/assets/menu/kahve/filtre.png" },
+  { category:"Kahve", name:"Latte", price:"170 TL", image:"public/assets/menu/kahve/latte.png" },
+  { category:"Kahve", name:"Cappuccino", price:"170 TL", image:"public/assets/menu/kahve/latte.png" },
+  { category:"Kahve", name:"Flat White", price:"170 TL", image:"public/assets/menu/kahve/latte.png" },
+  { category:"Kahve", name:"Macchiato", price:"170 TL", image:"public/assets/menu/kahve/latte.png" },
   { category:"Kahve", name:"Cortado", price:"160 TL", image:"public/assets/menu/kahve/latte.png" },
-  { category:"Kahve", name:"Mocha", price:"180 TL", image:"public/assets/menu/kahve/mocha.png" },
-  { category:"Kahve", name:"White Chocolate Mocha", price:"180 TL", image:"public/assets/menu/kahve/white-mocha.png" },
-  { category:"Kahve", name:"Caramel Macchiato", price:"180 TL", image:"public/assets/menu/kahve/caramel-macchiato.png" },
-  { category:"Kahve", name:"Toffee Nut Latte", price:"180 TL", image:"public/assets/menu/kahve/caramel-macchiato.png" },
-  { category:"Kahve", name:"Vanilla Latte", price:"180 TL", image:"public/assets/menu/kahve/vanilla-latte.png" },
-  { category:"Kahve", name:"Caramel Latte", price:"180 TL", image:"public/assets/menu/kahve/caramel-macchiato.png" },
-  { category:"Kahve", name:"Pumpkin Spice Latte", price:"180 TL", image:"public/assets/menu/kahve/psl.png" },
+  { category:"Kahve", name:"Mocha", price:"200 TL", image:"public/assets/menu/kahve/mocha.png" },
+  { category:"Kahve", name:"White Chocolate Mocha", price:"200 TL", image:"public/assets/menu/kahve/white-mocha.png" },
+  { category:"Kahve", name:"Caramel Macchiato", price:"200 TL", image:"public/assets/menu/kahve/caramel-macchiato.png" },
+  { category:"Kahve", name:"Toffee Nut Latte", price:"200 TL", image:"public/assets/menu/kahve/caramel-macchiato.png" },
+  { category:"Kahve", name:"Vanilla Latte", price:"200 TL", image:"public/assets/menu/kahve/vanilla-latte.png" },
+  { category:"Kahve", name:"Caramel Latte", price:"200 TL", image:"public/assets/menu/kahve/caramel-macchiato.png" },
+  { category:"Kahve", name:"Pumpkin Spice Latte", price:"200 TL", image:"public/assets/menu/kahve/psl.png" },
   // Iced & Cold Brew
-  { category:"Kahve", name:"Iced Americano", price:"140 TL", image:"public/assets/menu/kahve/iced-americano.png" },
-  { category:"Kahve", name:"Iced Filtre", price:"180 TL", image:"public/assets/menu/kahve/iced-filtre.png" },
-  { category:"Kahve", name:"Iced Latte", price:"160 TL", image:"public/assets/menu/kahve/iced-latte.png" },
-  { category:"Kahve", name:"Iced Caramel Macchiato", price:"180 TL", image:"public/assets/menu/kahve/iced-caramel-macchiato.png" },
-  { category:"Kahve", name:"Iced Mocha", price:"180 TL", image:"public/assets/menu/kahve/iced-mocha.png" },
-  { category:"Kahve", name:"Iced White Chocolate Mocha", price:"180 TL", image:"public/assets/menu/kahve/iced-white-mocha.png" },
-  { category:"Kahve", name:"Iced Toffee Nut Latte", price:"180 TL", image:"public/assets/menu/kahve/iced-latte.png" },
+  { category:"Kahve", name:"Iced Americano", price:"150 TL", image:"public/assets/menu/kahve/iced-americano.png" },
+  { category:"Kahve", name:"Iced Filtre", price:"150 TL", image:"public/assets/menu/kahve/iced-filtre.png" },
+  { category:"Kahve", name:"Iced Latte", price:"170 TL", image:"public/assets/menu/kahve/iced-latte.png" },
+  { category:"Kahve", name:"Iced Caramel Macchiato", price:"200 TL", image:"public/assets/menu/kahve/iced-caramel-macchiato.png" },
+  { category:"Kahve", name:"Iced Mocha", price:"200 TL", image:"public/assets/menu/kahve/iced-mocha.png" },
+  { category:"Kahve", name:"Iced White Chocolate Mocha", price:"200 TL", image:"public/assets/menu/kahve/iced-white-mocha.png" },
+  { category:"Kahve", name:"Iced Toffee Nut Latte", price:"200 TL", image:"public/assets/menu/kahve/iced-latte.png" },
   { category:"Kahve", name:"Türk Kahvesi", price:"80 TL", image:"public/assets/menu/kahve/turk-kahvesi.png" },
   { category:"Kahve", name:"Türk Kahvesi Double", price:"120 TL", image:"public/assets/menu/kahve/turk-kahvesi.png" },
 
@@ -401,9 +401,9 @@ const DATA_PDF = [
   { category:"Sıcak İçecekler", name:"Bitki Çayları",     price:"100 TL", image:"public/assets/menu/sicak-icecekler/kis.jpg" },
   { category:"Sıcak İçecekler", name:"Sallama Çaylar",        price:"50 TL", image:"public/assets/menu/sicak-icecekler/kis.jpg" },
   { category:"Sıcak İçecekler", name:"Oralet Çeşitleri",        price:"50 TL", image:"public/assets/menu/sicak-icecekler/oralet.png" },
-  { category:"Sıcak İçecekler", name:"Salep",            price:"100 TL", image:"public/assets/menu/sicak-icecekler/salep.jpg" },
-  { category:"Sıcak İçecekler", name:"Sıcak Çikolata",   price:"100 TL", image:"public/assets/menu/sicak-icecekler/sicak-cikolata.jpg" },
-  { category:"Sıcak İçecekler", name:"Ballı Süt",            price:"100 TL", image:"public/assets/menu/sicak-icecekler/ballisut.png" },
+  { category:"Sıcak İçecekler", name:"Salep",            price:"120 TL", image:"public/assets/menu/sicak-icecekler/salep.jpg" },
+  { category:"Sıcak İçecekler", name:"Sıcak Çikolata",   price:"120 TL", image:"public/assets/menu/sicak-icecekler/sicak-cikolata.jpg" },
+  { category:"Sıcak İçecekler", name:"Ballı Süt",            price:"120 TL", image:"public/assets/menu/sicak-icecekler/ballisut.png" },
 
   // SOĞUK İÇECEKLER
   { category:"Soğuk İçecekler", name:"Ev Yapımı Limonata", price:"75 TL", image:"public/assets/menu/soguk-icecek/lim.jpg" },
@@ -414,9 +414,9 @@ const DATA_PDF = [
   { category:"Soğuk İçecekler", name:"Cola Turka", price:"50 TL", image:"public/assets/menu/soguk-icecek/colaturka.jpg" },
   { category:"Soğuk İçecekler", name:"Fanta (330 ml)", price:"60 TL", image:"public/assets/menu/soguk-icecek/fanta-330.jpg" },
   { category:"Soğuk İçecekler", name:"Cappy (330 ml)", price:"60 TL", image:"public/assets/menu/soguk-icecek/cappy-330.jpg" },
-  { category:"Soğuk İçecekler", name:"Redbull (250 ml)", price:"70 TL", image:"public/assets/menu/soguk-icecek/redbull-250.jpg" },
+  { category:"Soğuk İçecekler", name:"Redbull (250 ml)", price:"80 TL", image:"public/assets/menu/soguk-icecek/redbull-250.jpg" },
   { category:"Soğuk İçecekler", name:"Didi (250 ml)", price:"30 TL", image:"public/assets/menu/soguk-icecek/didi-250.jpg" },
-  { category:"Soğuk İçecekler", name:"Lipton Ice Tea (330 ml)", price:"60 TL", image:"public/assets/menu/soguk-icecek/lipton-330.jpg" },
+  { category:"Soğuk İçecekler", name:"Lipton Ice Tea (330 ml)", price:"75 TL", image:"public/assets/menu/soguk-icecek/lipton-330.jpg" },
   { category:"Soğuk İçecekler", name:"Beypazarı Soda (200 ml)", price:"25 TL", image:"public/assets/menu/soguk-icecek/beypazari-200.jpg" },
   { category:"Soğuk İçecekler", name:"Meyveli Soda Çeşitleri (200 ml)", price:"40 TL", image:"public/assets/menu/soguk-icecek/meyveli-soda-200.jpg" },
   { category:"Soğuk İçecekler", name:"Ayran (200 ml)", price:"25 TL", image:"public/assets/menu/soguk-icecek/ayran-200.jpg" },
@@ -792,35 +792,3 @@ function Card(p){
   `;
   return el;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
