@@ -309,8 +309,8 @@ const DATA_PDF = [
   // SÜTLÜ TATLILAR
   { category:"Sütlü Tatlılar", name:"Soğuk Fıstıklı Baklava (Porsiyon)", price:"300 TL", image:"public/assets/menu/sutlu/soguk-fistikli.png" },
   { category:"Sütlü Tatlılar", name:"Soğuk Fındıklı Baklava (Porsiyon)", price:"200 TL", image:"public/assets/menu/sutlu/soguk-findikli.png" },
-  { category:"Sütlü Tatlılar", name:"Cup Çeşitleri(Frambuaz/Profiterol/Böğürtlen)", price:"250 TL", image:"public/assets/menu/sutlu/cup.png" },
-  { category:"Sütlü Tatlılar", name:"Sütlaç", price:"100 TL", image:"public/assets/menu/sutlu/sutlac.png" },
+  { category:"Sütlü Tatlılar", name:"Cup Çeşitleri(Frambuaz/Profiterol)", price:"250 TL", image:"public/assets/menu/sutlu/cup.png" },
+  { category:"Sütlü Tatlılar", name:"Sütlaç", price:"125 TL", image:"public/assets/menu/sutlu/sutlac.png" },
   { category:"Sütlü Tatlılar", name:"Islak Kek", price:"150 TL", image:"public/assets/menu/sutlu/islak-kek.png" },
   { category:"Sütlü Tatlılar", name:"Kıbrıs Tatlısı", price:"150 TL", image:"public/assets/menu/sutlu/kibris.png" },
   { category:"Sütlü Tatlılar", name:"Profiterol", price:"175 TL", image:"public/assets/menu/sutlu/profiterol.png" },
