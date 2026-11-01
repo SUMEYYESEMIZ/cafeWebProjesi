@@ -353,8 +353,8 @@ const DATA_PDF = [
 
 
   // ŞERBETLİ TATLILAR
-  { category:"Şerbetli Tatlılar", name:"Kare Fıstıklı Kadayıf (Porsiyon)", price:"280 TL", image:"public/assets/menu/serbetli/kare-fistikli-kadayif.png" },
-  { category:"Şerbetli Tatlılar", name:"Kare Cevizli Kadayıf (Porsiyon)", price:"150 TL", image:"public/assets/menu/serbetli/kare-cevizli-kadayif.png" },
+  { category:"Şerbetli Tatlılar", name:"Kare Fıstıklı Kadayıf (Porsiyon)", price:"300 TL", image:"public/assets/menu/serbetli/kare-fistikli-kadayif.png" },
+  { category:"Şerbetli Tatlılar", name:"Kare Cevizli Kadayıf (Porsiyon)", price:"180 TL", image:"public/assets/menu/serbetli/kare-cevizli-kadayif.png" },
   { category:"Şerbetli Tatlılar", name:"Cevizli Baklava (Porsiyon)", price:"150 TL", image:"public/assets/menu/serbetli/cevizli-baklava.png" },
   { category:"Şerbetli Tatlılar", name:"Kuru Baklava (Porsiyon)", price:"300 TL", image:"public/assets/menu/serbetli/kuru-baklava.png" },
   { category:"Şerbetli Tatlılar", name:"Sarı Burma (Cevizli) (Porsiyon)", price:"200 TL", image:"public/assets/menu/serbetli/sari-burma.png" },
